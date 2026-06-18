@@ -3,11 +3,18 @@
 [ext_resource type="Script" uid="uid://cr6k2dmfwvcq3" path="res://src/Archivo/archivo.gd" id="1_6vgqb"]
 [ext_resource type="Texture2D" uid="uid://dhfkpsix2en6l" path="res://assets/icon.svg" id="1_85qj8"]
 
-[node name="Archivo" type="Button" unique_id=1751381297]
+[node name="Archivo" type="Button" unique_id=1751381297 groups=["archivo"]]
 offset_right = 80.0
 offset_bottom = 80.0
 theme_type_variation = &"FlatButton"
 script = ExtResource("1_6vgqb")
+
+[node name="caja" type="ColorRect" parent="." unique_id=1011495547]
+layout_mode = 0
+offset_left = 8.0
+offset_right = 72.0
+offset_bottom = 80.0
+color = Color(0.14117648, 0.14117648, 0.14117648, 0.5882353)
 
 [node name="icono" type="TextureRect" parent="." unique_id=1852487687]
 layout_mode = 0

@@ -8,6 +8,7 @@ extends Button
 func _ready() -> void:
 	$icono.texture = icono
 	$name.text = nom
+	$caja.hide()
 	if oculto:
 		$".".hide()
 		$icono.hide()
@@ -20,6 +21,7 @@ func _process(delta: float) -> void:
 
 
 func select():
+	$caja.show()
 	if oculto:
 		$".".show()
 		$icono.show()
@@ -28,6 +30,15 @@ func select():
 		# aca poner q lo ponga con el cuadradito tipo windows
 		pass
 
+func deselect():
+	$caja.hide()
+	if oculto:
+		$".".hide()
+		$icono.hide()
+		$name.hide()
+	else:
+		# aca poner q lo ponga con el cuadradito tipo windows
+		pass
 
 func _on_pressed() -> void:
 	if abrir:

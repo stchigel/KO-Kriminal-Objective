@@ -11,12 +11,17 @@ config_version=5
 [application]
 
 config/name="KO Kriminal Objective"
+run/main_scene="uid://bhcomka7hwoi1"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://assets/icon.svg"
 
 [autoload]
 
 Global="*uid://yq8crlqlw3cm"
+
+[global_group]
+
+archivo=""
 
 [physics]
 
