@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://bhcomka7hwoi1"]
+
+[ext_resource type="Script" uid="uid://bfrjbfplq5ri5" path="res://src/Menu/menu.gd" id="1_vbyo6"]
+
+[node name="Menu" type="Control" unique_id=1524986336]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vbyo6")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=451955899]
+layout_mode = 0
+offset_right = 1162.0
+offset_bottom = 662.0
+color = Color(0.051970966, 0.05197096, 0.05197095, 1)
+
+[node name="Label" type="Label" parent="." unique_id=265199709]
+layout_mode = 0
+offset_left = 401.0
+offset_top = 45.575546
+offset_right = 608.0
+offset_bottom = 243.57555
+rotation = -0.2617994
+theme_override_font_sizes/font_size = 145
+text = "KO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=484944583]
+layout_mode = 0
+offset_left = 487.0
+offset_top = 187.57559
+offset_right = 496.0
+offset_bottom = 432.5756
+rotation = -0.2617994
+theme_override_font_sizes/font_size = 20
+text = "riminal"
+horizontal_alignment = 1
+autowrap_mode = 1
+uppercase = true
+
+[node name="Label3" type="Label" parent="." unique_id=1125230917]
+layout_mode = 0
+offset_left = 587.00006
+offset_top = 162.57556
+offset_right = 596.00006
+offset_bottom = 438.57556
+rotation = -0.2617994
+theme_override_font_sizes/font_size = 20
+text = "bjective"
+horizontal_alignment = 1
+autowrap_mode = 1
+uppercase = true
+
+[node name="Button" type="Button" parent="." unique_id=854736668]
+layout_mode = 0
+offset_left = 520.0
+offset_top = 461.0
+offset_right = 619.0
+offset_bottom = 534.0
+text = "Play"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

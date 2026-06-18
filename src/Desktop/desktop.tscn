@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://dxsrgyhyuujw1"]
+
+[ext_resource type="Texture2D" uid="uid://b0eysjn7s5kwv" path="res://assets/Kali-Linux.jpg" id="1_ew7o8"]
+[ext_resource type="Script" uid="uid://botiew3pa4beb" path="res://src/Desktop/desktop.gd" id="1_p6cdx"]
+[ext_resource type="PackedScene" uid="uid://c6loc4d14ok78" path="res://src/Archivo/archivo.tscn" id="2_52vt5"]
+[ext_resource type="Texture2D" uid="uid://dfroqy6y156fx" path="res://assets/iconos/folder-blue-home.svg" id="3_xgjrc"]
+
+[node name="Desktop" type="Control" unique_id=1349076015 node_paths=PackedStringArray("ventanas")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p6cdx")
+ventanas = [NodePath("Home")]
+
+[node name="KaliLinux" type="TextureRect" parent="." unique_id=619088530]
+layout_mode = 0
+offset_left = -10.0
+offset_right = 790.0
+offset_bottom = 441.0
+scale = Vector2(1.4692461, 1.469246)
+texture = ExtResource("1_ew7o8")
+
+[node name="Archivo" parent="." unique_id=1751381297 instance=ExtResource("2_52vt5")]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 16.0
+offset_right = 112.0
+offset_bottom = 96.0
+icono = ExtResource("1_ew7o8")
+
+[node name="HomeIco" parent="." unique_id=1718851107 node_paths=PackedStringArray("abrir") instance=ExtResource("2_52vt5")]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 104.0
+offset_right = 112.0
+offset_bottom = 184.0
+nom = "Home"
+icono = ExtResource("3_xgjrc")
+abrir = NodePath("../Home")
+
+[node name="Archivo3" parent="." unique_id=1981723697 instance=ExtResource("2_52vt5")]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 192.0
+offset_right = 112.0
+offset_bottom = 272.0
+
+[node name="Archivo4" parent="." unique_id=831364882 instance=ExtResource("2_52vt5")]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 280.0
+offset_right = 112.0
+offset_bottom = 360.0
+nom = "LoL"
+
+[node name="Home" type="PanelContainer" parent="." unique_id=1480411221]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 128.0
+offset_right = 872.0
+offset_bottom = 552.0
+
+[node name="Label" type="Label" parent="Home" unique_id=94773811]
+layout_mode = 2
+text = "HOLA ESTE ES HOME"
