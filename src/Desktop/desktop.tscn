@@ -4,7 +4,8 @@
 [ext_resource type="Script" uid="uid://botiew3pa4beb" path="res://src/Desktop/desktop.gd" id="1_p6cdx"]
 [ext_resource type="PackedScene" uid="uid://c6loc4d14ok78" path="res://src/Archivo/archivo.tscn" id="2_52vt5"]
 [ext_resource type="Texture2D" uid="uid://dfroqy6y156fx" path="res://assets/iconos/folder-blue-home.svg" id="3_xgjrc"]
-[ext_resource type="Script" uid="uid://sw5m6e0iy6aj" path="res://src/Desktop/color_rect.gd" id="5_3m658"]
+[ext_resource type="PackedScene" uid="uid://cbmwtnvtuplp2" path="res://src/Texto/texto.tscn" id="5_jq181"]
+[ext_resource type="PackedScene" uid="uid://b1if5ttacl8hp" path="res://src/Carpeta/carpeta.tscn" id="6_jq181"]
 
 [node name="Desktop" type="Control" unique_id=1349076015 node_paths=PackedStringArray("ventanas")]
 layout_mode = 3
@@ -14,7 +15,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_p6cdx")
-ventanas = [NodePath("ColorRect")]
+ventanas = [null, NodePath("Texto"), NodePath("Carpeta"), NodePath("Texto2")]
 
 [node name="KaliLinux" type="TextureRect" parent="." unique_id=619088530]
 show_behind_parent = true
@@ -42,7 +43,7 @@ offset_right = 96.0
 offset_bottom = 184.0
 nom = "Home"
 icono = ExtResource("3_xgjrc")
-abrir = NodePath("../ColorRect")
+abrir = NodePath("../Carpeta")
 
 [node name="Archivo3" parent="." unique_id=1981723697 instance=ExtResource("2_52vt5")]
 layout_mode = 0
@@ -59,7 +60,7 @@ offset_right = 96.0
 offset_bottom = 360.0
 nom = "LoL"
 
-[node name="Oculto" parent="." unique_id=828514605 instance=ExtResource("2_52vt5")]
+[node name="Oculto" parent="." unique_id=828514605 node_paths=PackedStringArray("abrir") instance=ExtResource("2_52vt5")]
 layout_mode = 0
 offset_left = 16.0
 offset_top = 368.0
@@ -67,21 +68,35 @@ offset_right = 96.0
 offset_bottom = 448.0
 nom = "\"tarea\""
 oculto = true
+abrir = NodePath("../Texto")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=331621071]
+[node name="Texto" parent="." unique_id=1796508400 instance=ExtResource("5_jq181")]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 24.0
+offset_right = 960.0
+offset_bottom = 472.0
+nombre = "TEST.txt"
+
+[node name="Carpeta" parent="." unique_id=294069202 instance=ExtResource("6_jq181")]
 layout_mode = 0
 offset_left = 128.0
-offset_top = 64.0
-offset_right = 1024.0
-offset_bottom = 584.0
-color = Color(0, 0, 0, 0.78431374)
-script = ExtResource("5_3m658")
+offset_top = 104.0
+offset_right = 960.0
+offset_bottom = 552.0
 
-[node name="Button" type="Button" parent="ColorRect" unique_id=1725046296]
+[node name="Archivo2" parent="Carpeta" unique_id=2028014369 node_paths=PackedStringArray("abrir") instance=ExtResource("2_52vt5")]
 layout_mode = 0
-offset_left = 864.0
-offset_right = 896.0
-offset_bottom = 32.0
-text = "X"
+offset_left = 336.0
+offset_top = 176.0
+offset_right = 416.0
+offset_bottom = 256.0
+abrir = NodePath("../../Texto2")
 
-[connection signal="pressed" from="ColorRect/Button" to="ColorRect" method="_on_button_pressed"]
+[node name="Texto2" parent="." unique_id=1570221707 instance=ExtResource("5_jq181")]
+layout_mode = 0
+offset_left = 808.0
+offset_top = 168.0
+offset_right = 1128.0
+offset_bottom = 616.0
+nombre = "archivoencarpeta"
