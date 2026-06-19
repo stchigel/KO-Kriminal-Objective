@@ -71,6 +71,7 @@ oculto = true
 abrir = NodePath("../Texto")
 
 [node name="Texto" parent="." unique_id=1796508400 instance=ExtResource("5_jq181")]
+visible = false
 layout_mode = 0
 offset_left = 640.0
 offset_top = 24.0
@@ -79,6 +80,7 @@ offset_bottom = 472.0
 nombre = "TEST.txt"
 
 [node name="Carpeta" parent="." unique_id=294069202 instance=ExtResource("6_jq181")]
+visible = false
 layout_mode = 0
 offset_left = 128.0
 offset_top = 104.0
@@ -86,6 +88,7 @@ offset_right = 960.0
 offset_bottom = 552.0
 
 [node name="Archivo2" parent="Carpeta" unique_id=2028014369 node_paths=PackedStringArray("abrir") instance=ExtResource("2_52vt5")]
+visible = false
 layout_mode = 0
 offset_left = 336.0
 offset_top = 176.0
@@ -94,6 +97,7 @@ offset_bottom = 256.0
 abrir = NodePath("../../Texto2")
 
 [node name="Texto2" parent="." unique_id=1570221707 instance=ExtResource("5_jq181")]
+visible = false
 layout_mode = 0
 offset_left = 808.0
 offset_top = 168.0
