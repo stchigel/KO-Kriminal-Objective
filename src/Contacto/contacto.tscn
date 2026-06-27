@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://d34bwkgdh85v6"]
+
+[ext_resource type="Script" uid="uid://bvexpy0nrh6iv" path="res://src/Contacto/contacto.gd" id="1_bu4ir"]
+[ext_resource type="Texture2D" uid="uid://dhfkpsix2en6l" path="res://assets/icon.svg" id="1_ojjwu"]
+
+[node name="Contacto" type="Button" unique_id=523193422]
+offset_right = 320.0
+offset_bottom = 80.0
+script = ExtResource("1_bu4ir")
+
+[node name="Icon" type="TextureRect" parent="." unique_id=447595546]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 178.66667
+offset_bottom = 178.66667
+scale = Vector2(0.375, 0.375)
+texture = ExtResource("1_ojjwu")
+expand_mode = 1
+
+[node name="Nombre" type="Label" parent="." unique_id=2121924593]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 16.0
+offset_right = 312.0
+offset_bottom = 39.0
+text = "CARLOS GODOT"
+
+[node name="Mensaje" type="Label" parent="." unique_id=1614667176]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 40.0
+offset_right = 192.0
+offset_bottom = 56.0
+theme_override_font_sizes/font_size = 10
+text = "Ultimo mensaje"
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

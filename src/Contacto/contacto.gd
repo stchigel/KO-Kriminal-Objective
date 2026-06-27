@@ -1,0 +1,17 @@
+extends Button
+@export var chat: Chat
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	if chat:
+		$Icon.texture = chat.avatar
+		$Nombre.text = chat.nombre
+		if chat.mensajes.size() > 0:
+			$Mensaje.text = chat.mensajes[0].text
+		else :
+			$Mensaje.text = "Placeholder"
+
+
+func _on_pressed() -> void:
+	if chat and chat.mensajes.size() > 0:
+		get_parent().get_parent().get_parent().load_messages(chat.mensajes)

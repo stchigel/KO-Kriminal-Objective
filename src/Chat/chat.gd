@@ -9,7 +9,7 @@ var drag_offset: Vector2 = Vector2.ZERO
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	load_messages()
+	#load_messages()
 	$Label.text = nombre
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -38,16 +38,19 @@ var messages = [
 	{"text": "How are you?", "time": "10:34", "sent": false}
 ]
 
-func load_messages():
-	for msg in messages:
+func load_messages(mensajes:Array):
+	for child in messages_container.get_children():
+		child.queue_free()
+	for msg in mensajes:
 		var bubble: Control
 		if msg.sent:
 			bubble = sent_bubble_scene.instantiate()
-			bubble.offset_left += 100
-			bubble.offset_right += 100
 		else:
 			bubble = received_bubble_scene.instantiate()
 		bubble.custom_minimum_size.y = 100
 		if bubble.has_method("setup"):
 			bubble.setup(msg.text, msg.time)
 		messages_container.add_child(bubble)
+		if msg.sent:
+			await get_tree().process_frame
+			bubble.offset_transform_position.x = 1000
