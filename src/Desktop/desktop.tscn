@@ -3,9 +3,13 @@
 [ext_resource type="Texture2D" uid="uid://b0eysjn7s5kwv" path="res://assets/Kali-Linux.jpg" id="1_ew7o8"]
 [ext_resource type="Script" uid="uid://botiew3pa4beb" path="res://src/Desktop/desktop.gd" id="1_p6cdx"]
 [ext_resource type="PackedScene" uid="uid://c6loc4d14ok78" path="res://src/Archivo/archivo.tscn" id="2_52vt5"]
+[ext_resource type="Texture2D" uid="uid://x75t1fd57l1c" path="res://assets/kali-linux-wallpaper-v7.png" id="2_cbipd"]
 [ext_resource type="Texture2D" uid="uid://dfroqy6y156fx" path="res://assets/iconos/folder-blue-home.svg" id="3_xgjrc"]
 [ext_resource type="PackedScene" uid="uid://cbmwtnvtuplp2" path="res://src/Texto/texto.tscn" id="5_jq181"]
 [ext_resource type="PackedScene" uid="uid://b1if5ttacl8hp" path="res://src/Carpeta/carpeta.tscn" id="6_jq181"]
+[ext_resource type="PackedScene" uid="uid://c6nqi43hdw1yj" path="res://src/Chat/chat.tscn" id="7_ag723"]
+[ext_resource type="Script" uid="uid://by8r7fs8syfyj" path="res://chat.gd" id="8_cbipd"]
+[ext_resource type="Resource" uid="uid://cocb0gxevofpn" path="res://chatTest.tres" id="9_3gr61"]
 
 [node name="Desktop" type="Control" unique_id=1349076015 node_paths=PackedStringArray("ventanas")]
 layout_mode = 3
@@ -15,17 +19,18 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_p6cdx")
-ventanas = [null, NodePath("Texto"), NodePath("Carpeta"), NodePath("Texto2")]
+ventanas = [null, NodePath("Texto"), NodePath("Carpeta"), NodePath("Texto2"), NodePath("Chat")]
 
 [node name="KaliLinux" type="TextureRect" parent="." unique_id=619088530]
 show_behind_parent = true
 layout_mode = 0
-offset_left = -10.0
-offset_right = 790.0
-offset_bottom = 441.0
+offset_top = -36.0
+offset_right = 784.0756
+offset_bottom = 454.04727
 scale = Vector2(1.4692461, 1.469246)
 mouse_filter = 2
-texture = ExtResource("1_ew7o8")
+texture = ExtResource("2_cbipd")
+expand_mode = 1
 
 [node name="Archivo" parent="." unique_id=1751381297 instance=ExtResource("2_52vt5")]
 layout_mode = 0
@@ -52,13 +57,14 @@ offset_top = 192.0
 offset_right = 96.0
 offset_bottom = 272.0
 
-[node name="Archivo4" parent="." unique_id=831364882 instance=ExtResource("2_52vt5")]
+[node name="Archivo4" parent="." unique_id=831364882 node_paths=PackedStringArray("abrir") instance=ExtResource("2_52vt5")]
 layout_mode = 0
 offset_left = 16.0
 offset_top = 280.0
 offset_right = 96.0
 offset_bottom = 360.0
 nom = "LoL"
+abrir = NodePath("../Chat")
 
 [node name="Oculto" parent="." unique_id=828514605 node_paths=PackedStringArray("abrir") instance=ExtResource("2_52vt5")]
 layout_mode = 0
@@ -88,7 +94,6 @@ offset_right = 960.0
 offset_bottom = 552.0
 
 [node name="Archivo2" parent="Carpeta" unique_id=2028014369 node_paths=PackedStringArray("abrir") instance=ExtResource("2_52vt5")]
-visible = false
 layout_mode = 0
 offset_left = 336.0
 offset_top = 176.0
@@ -104,3 +109,12 @@ offset_top = 168.0
 offset_right = 1128.0
 offset_bottom = 616.0
 nombre = "archivoencarpeta"
+
+[node name="Chat" parent="." unique_id=1345496942 instance=ExtResource("7_ag723")]
+visible = false
+layout_mode = 0
+offset_left = 192.0
+offset_top = 56.0
+offset_right = 1024.0
+offset_bottom = 504.0
+chats = Array[ExtResource("8_cbipd")]([ExtResource("9_3gr61")])

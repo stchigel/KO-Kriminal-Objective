@@ -4,9 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://bw3ggorp0vr77" path="res://src/Burbuja/burbuja.tscn" id="2_xwf2f"]
 [ext_resource type="PackedScene" uid="uid://dc40rllqxwshx" path="res://src/Burbuja/burbuja2.tscn" id="3_g4see"]
 [ext_resource type="PackedScene" uid="uid://d34bwkgdh85v6" path="res://src/Contacto/contacto.tscn" id="4_qur7i"]
-[ext_resource type="Texture2D" uid="uid://b0eysjn7s5kwv" path="res://assets/Kali-Linux.jpg" id="5_xm1kq"]
-[ext_resource type="Script" uid="uid://gdiumfglcp6n" path="res://mensaje.gd" id="6_smdgg"]
-[ext_resource type="Script" uid="uid://by8r7fs8syfyj" path="res://chat.gd" id="7_d6e2e"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ahdgd"]
 content_margin_left = 0.0
@@ -20,46 +17,6 @@ corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
 
-[sub_resource type="Resource" id="Resource_cw773"]
-script = ExtResource("6_smdgg")
-text = "Hola"
-time = "12/06 11:04"
-sent = true
-metadata/_custom_type_script = "uid://gdiumfglcp6n"
-
-[sub_resource type="Resource" id="Resource_xm1kq"]
-script = ExtResource("6_smdgg")
-text = "Hola?"
-time = "12/06 15:10"
-metadata/_custom_type_script = "uid://gdiumfglcp6n"
-
-[sub_resource type="Resource" id="Resource_smdgg"]
-script = ExtResource("6_smdgg")
-text = "TE VOY A MATARRRRRR"
-time = "12/06 15:10"
-sent = true
-metadata/_custom_type_script = "uid://gdiumfglcp6n"
-
-[sub_resource type="Resource" id="Resource_d6e2e"]
-script = ExtResource("6_smdgg")
-text = "Responde pete"
-time = "12/06 15:32"
-sent = true
-metadata/_custom_type_script = "uid://gdiumfglcp6n"
-
-[sub_resource type="Resource" id="Resource_bu4ir"]
-script = ExtResource("6_smdgg")
-text = "Upsis lo lei tarde jiji"
-time = "13/06 06:54"
-metadata/_custom_type_script = "uid://gdiumfglcp6n"
-
-[sub_resource type="Resource" id="Resource_it0sp"]
-script = ExtResource("7_d6e2e")
-nombre = "Uno"
-avatar = ExtResource("5_xm1kq")
-mensajes = Array[ExtResource("6_smdgg")]([SubResource("Resource_cw773"), SubResource("Resource_xm1kq"), SubResource("Resource_smdgg"), SubResource("Resource_d6e2e"), SubResource("Resource_bu4ir")])
-metadata/_custom_type_script = "uid://by8r7fs8syfyj"
-
 [node name="Chat" type="Panel" unique_id=1796508400]
 offset_right = 832.0
 offset_bottom = 448.0
@@ -67,6 +24,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_ahdgd")
 script = ExtResource("1_msn3y")
 sent_bubble_scene = ExtResource("2_xwf2f")
 received_bubble_scene = ExtResource("3_g4see")
+contacto_scene = ExtResource("4_qur7i")
 
 [node name="Panel" type="Panel" parent="." unique_id=1060858633]
 layout_mode = 0
@@ -108,23 +66,6 @@ offset_bottom = 448.0
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer2" unique_id=1054487447]
 layout_mode = 2
 offset_transform_enabled = true
-
-[node name="Contacto" parent="ScrollContainer2/VBoxContainer" unique_id=523193422 instance=ExtResource("4_qur7i")]
-custom_minimum_size = Vector2(250, 75)
-layout_mode = 2
-chat = SubResource("Resource_it0sp")
-
-[node name="Contacto2" parent="ScrollContainer2/VBoxContainer" unique_id=360985171 instance=ExtResource("4_qur7i")]
-custom_minimum_size = Vector2(250, 75)
-layout_mode = 2
-
-[node name="Contacto3" parent="ScrollContainer2/VBoxContainer" unique_id=1564247557 instance=ExtResource("4_qur7i")]
-custom_minimum_size = Vector2(250, 75)
-layout_mode = 2
-
-[node name="Contacto4" parent="ScrollContainer2/VBoxContainer" unique_id=1879631388 instance=ExtResource("4_qur7i")]
-custom_minimum_size = Vector2(250, 75)
-layout_mode = 2
 
 [connection signal="gui_input" from="Panel" to="." method="_on_panel_gui_input"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

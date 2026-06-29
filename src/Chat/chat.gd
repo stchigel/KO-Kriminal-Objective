@@ -2,6 +2,8 @@ extends Panel
 @export var nombre: String = "Whatsapp"
 @export var sent_bubble_scene: PackedScene
 @export var received_bubble_scene: PackedScene
+@export var chats: Array[Chat]
+@export var contacto_scene: PackedScene
 @onready var messages_container = $ScrollContainer/VBoxContainer
 
 var dragging: bool = false
@@ -9,8 +11,13 @@ var drag_offset: Vector2 = Vector2.ZERO
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	#load_messages()
 	$Label.text = nombre
+	for chat in chats:
+		var cont = contacto_scene.instantiate()
+		cont.chat = chat
+		cont.custom_minimum_size.y = 75
+		cont.custom_minimum_size.x = 300
+		$ScrollContainer2/VBoxContainer.add_child(cont)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -51,6 +58,3 @@ func load_messages(mensajes:Array):
 		if bubble.has_method("setup"):
 			bubble.setup(msg.text, msg.time)
 		messages_container.add_child(bubble)
-		if msg.sent:
-			await get_tree().process_frame
-			bubble.offset_transform_position.x = 1000

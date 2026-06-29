@@ -7,7 +7,7 @@ func _ready() -> void:
 		$Icon.texture = chat.avatar
 		$Nombre.text = chat.nombre
 		if chat.mensajes.size() > 0:
-			$Mensaje.text = chat.mensajes[0].text
+			$Mensaje.text = chat.mensajes[chat.mensajes.size()-1].text
 		else :
 			$Mensaje.text = "Placeholder"
 

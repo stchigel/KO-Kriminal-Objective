@@ -5,7 +5,7 @@
 
 [node name="Burbuja" type="Panel" unique_id=1435166161]
 z_index = 1
-offset_right = 312.0
+offset_right = 440.0
 offset_bottom = 80.0
 theme_override_styles/panel = ExtResource("1_mtwec")
 script = ExtResource("2_n8la0")
@@ -13,30 +13,31 @@ script = ExtResource("2_n8la0")
 [node name="Panel" type="Panel" parent="." unique_id=878744674]
 custom_minimum_size = Vector2(312, 80)
 layout_mode = 0
-offset_right = 312.0
+offset_left = 128.0
+offset_right = 440.0
 offset_bottom = 80.0
 theme_override_styles/panel = ExtResource("1_mtwec")
 
 [node name="Texto" type="RichTextLabel" parent="." unique_id=456977106]
 layout_mode = 0
-offset_left = 8.0
+offset_left = 136.0
 offset_top = 10.0
-offset_right = 304.0
+offset_right = 432.0
 offset_bottom = 64.0
 text = "Hola juan como va"
 fit_content = true
 
 [node name="Polygon2D" type="Polygon2D" parent="." unique_id=981333470]
-position = Vector2(-1176, -258.98907)
+position = Vector2(-1048, -258.98907)
 scale = Vector2(4.8, 4.1684775)
 color = Color(0, 0.6313726, 0.14509805, 1)
 polygon = PackedVector2Array(309.99997, 78.92307, 310, 86, 304.99997, 78.92307, 307.56146, 78.92307)
 
 [node name="Texto2" type="RichTextLabel" parent="." unique_id=1346602150]
 layout_mode = 0
-offset_left = 208.0
+offset_left = 336.0
 offset_top = 64.0
-offset_right = 304.0
+offset_right = 432.0
 offset_bottom = 80.0
 theme_override_font_sizes/normal_font_size = 8
 theme_override_font_sizes/italics_font_size = 8
