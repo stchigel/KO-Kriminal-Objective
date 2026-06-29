@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://c6nqi43hdw1yj" path="res://src/Chat/chat.tscn" id="7_ag723"]
 [ext_resource type="Script" uid="uid://by8r7fs8syfyj" path="res://chat.gd" id="8_cbipd"]
 [ext_resource type="Resource" uid="uid://cocb0gxevofpn" path="res://chatTest.tres" id="9_3gr61"]
+[ext_resource type="PackedScene" uid="uid://gvdkmy35w8vf" path="res://src/Icono/icono.tscn" id="11_3gr61"]
 
 [node name="Desktop" type="Control" unique_id=1349076015 node_paths=PackedStringArray("ventanas")]
 layout_mode = 3
@@ -118,3 +119,19 @@ offset_top = 56.0
 offset_right = 1024.0
 offset_bottom = 504.0
 chats = Array[ExtResource("8_cbipd")]([ExtResource("9_3gr61")])
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=819574114]
+layout_mode = 0
+offset_top = 608.0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="Icono" parent="ColorRect" unique_id=1569392046 instance=ExtResource("11_3gr61")]
+layout_mode = 0
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1724619204]
+layout_mode = 0
+offset_top = 607.0
+offset_right = 1152.0
+offset_bottom = 608.0
