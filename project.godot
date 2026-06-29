@@ -18,10 +18,15 @@ config/icon="res://assets/icon.svg"
 [autoload]
 
 Global="*uid://yq8crlqlw3cm"
+flowerwall_crt="*uid://cc1fomjf362h5"
 
 [display]
 
 window/stretch/mode="canvas_items"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/flowerwall_crt/plugin.cfg")
 
 [global_group]
 
