@@ -38,13 +38,6 @@ func _on_panel_gui_input(event: InputEvent) -> void:
 		global_position = get_global_mouse_position() - drag_offset
 		
 
-
-var messages = [
-	{"text": "Hello!", "time": "10:32", "sent": false},
-	{"text": "Hi there", "time": "10:33", "sent": true},
-	{"text": "How are you?", "time": "10:34", "sent": false}
-]
-
 func load_messages(mensajes:Array):
 	for child in messages_container.get_children():
 		child.queue_free()

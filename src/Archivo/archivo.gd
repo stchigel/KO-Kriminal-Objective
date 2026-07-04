@@ -3,6 +3,7 @@ extends Button
 @export var icono: Texture2D = preload("res://assets/icon.svg")
 @export var oculto: bool
 @export var abrir: Node
+var seleccionado: bool
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -22,6 +23,7 @@ func _process(delta: float) -> void:
 
 func select():
 	$caja.show()
+	seleccionado=true
 	if oculto:
 		$".".show()
 		$icono.show()
@@ -32,6 +34,7 @@ func select():
 
 func deselect():
 	$caja.hide()
+	seleccionado=false
 	if oculto:
 		$".".hide()
 		$icono.hide()
@@ -40,6 +43,12 @@ func deselect():
 		# aca poner q lo ponga con el cuadradito tipo windows
 		pass
 
-func _on_pressed() -> void:
-	if abrir:
-		abrir.show()
+func _gui_input(event: InputEvent) -> void:
+	if event is InputEventMouseButton \
+	and event.button_index == MOUSE_BUTTON_LEFT and event.pressed and event.double_click:
+		if abrir:
+			abrir.show()
+
+#func _on_pressed() -> void:
+#	if abrir:
+#		abrir.show()

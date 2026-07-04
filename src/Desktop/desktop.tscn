@@ -14,6 +14,31 @@
 [ext_resource type="Script" uid="uid://by8r7fs8syfyj" path="res://chat.gd" id="8_cbipd"]
 [ext_resource type="Resource" uid="uid://cocb0gxevofpn" path="res://chatTest.tres" id="9_3gr61"]
 [ext_resource type="PackedScene" uid="uid://gvdkmy35w8vf" path="res://src/Icono/icono.tscn" id="11_3gr61"]
+[ext_resource type="PackedScene" uid="uid://dyinmj2mlclit" path="res://src/Mail/mail.tscn" id="13_w8gr4"]
+[ext_resource type="Script" uid="uid://b341mvssqe4vw" path="res://mail.gd" id="14_40vof"]
+[ext_resource type="PackedScene" uid="uid://dir6afeorbba6" path="res://src/Mail/contactoMail.tscn" id="15_kaepd"]
+[ext_resource type="Texture2D" uid="uid://difcjwmcktrmn" path="res://assets/iconos/email.svg" id="17_40vof"]
+
+[sub_resource type="Resource" id="Resource_wemud"]
+script = ExtResource("14_40vof")
+nombre = "GOOGLE"
+asunto = "HOOOOOLAAAAAAAAAAA"
+mensaje = "LORIEMEF PISUMMUMUMUMJUMUMU"
+metadata/_custom_type_script = "uid://b341mvssqe4vw"
+
+[sub_resource type="Resource" id="Resource_w8gr4"]
+script = ExtResource("14_40vof")
+nombre = "Lololol"
+asunto = "Troleado putooooo"
+mensaje = "tun tunununun tnunun un nun (musica coscu)"
+metadata/_custom_type_script = "uid://b341mvssqe4vw"
+
+[sub_resource type="Resource" id="Resource_7mirj"]
+script = ExtResource("14_40vof")
+nombre = "Carla"
+asunto = "PERDON"
+mensaje = "Perdoname por las fotos lya las borro"
+metadata/_custom_type_script = "uid://b341mvssqe4vw"
 
 [node name="Desktop" type="Control" unique_id=1349076015 node_paths=PackedStringArray("ventanas")]
 layout_mode = 3
@@ -23,7 +48,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_p6cdx")
-ventanas = [null, NodePath("Texto"), NodePath("Carpeta"), NodePath("Texto2"), NodePath("Chat")]
+ventanas = [null, NodePath("Texto"), NodePath("Carpeta"), NodePath("Texto2"), NodePath("Chat"), NodePath("Mail")]
 
 [node name="KaliLinux" type="TextureRect" parent="." unique_id=619088530]
 show_behind_parent = true
@@ -128,6 +153,17 @@ offset_right = 1024.0
 offset_bottom = 504.0
 chats = Array[ExtResource("8_cbipd")]([ExtResource("9_3gr61")])
 
+[node name="Mail" parent="." unique_id=917862470 instance=ExtResource("13_w8gr4")]
+visible = false
+layout_mode = 0
+offset_left = 224.0
+offset_top = 80.0
+offset_right = 928.0
+offset_bottom = 528.0
+mails = Array[ExtResource("14_40vof")]([SubResource("Resource_wemud"), SubResource("Resource_w8gr4")])
+borradores = Array[ExtResource("14_40vof")]([SubResource("Resource_7mirj")])
+contacto_scene = ExtResource("15_kaepd")
+
 [node name="Taskbar" type="ColorRect" parent="." unique_id=819574114]
 layout_mode = 0
 offset_top = 608.0
@@ -141,6 +177,13 @@ offset_left = 8.0
 offset_right = 48.0
 icono = ExtResource("7_w8gr4")
 abrir = NodePath("../../Chat")
+
+[node name="Icono2" parent="Taskbar" unique_id=212309803 node_paths=PackedStringArray("abrir") instance=ExtResource("11_3gr61")]
+layout_mode = 0
+offset_left = 56.0
+offset_right = 96.0
+icono = ExtResource("17_40vof")
+abrir = NodePath("../../Mail")
 
 [node name="Linea" type="ColorRect" parent="Taskbar" unique_id=1724619204]
 layout_mode = 0
