@@ -60,5 +60,6 @@ func _gui_input(event: InputEvent) -> void:
 
 
 func _on_line_edit_text_submitted(new_text: String) -> void:
+	$Panel.hide()
 	if new_text==contra:
 		abrir.show()
