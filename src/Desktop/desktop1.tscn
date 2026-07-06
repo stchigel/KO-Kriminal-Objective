@@ -2,15 +2,40 @@
 
 [ext_resource type="Script" uid="uid://botiew3pa4beb" path="res://src/Desktop/desktop.gd" id="1_0xtnm"]
 [ext_resource type="Texture2D" uid="uid://x75t1fd57l1c" path="res://assets/kali-linux-wallpaper-v7.png" id="2_oa6j7"]
+[ext_resource type="PackedScene" uid="uid://gvdkmy35w8vf" path="res://src/Icono/icono.tscn" id="3_0v8fh"]
 [ext_resource type="PackedScene" uid="uid://c6loc4d14ok78" path="res://src/Archivo/archivo.tscn" id="3_sqyg2"]
 [ext_resource type="Texture2D" uid="uid://j3eejcb1nswt" path="res://assets/iconos/user-trash-full.svg" id="4_2oi1j"]
+[ext_resource type="Texture2D" uid="uid://difcjwmcktrmn" path="res://assets/iconos/email.svg" id="4_ibk8h"]
+[ext_resource type="Texture2D" uid="uid://bqdvgkvq5agmy" path="res://assets/iconos/whatsapp.svg" id="5_nqg2q"]
 [ext_resource type="Texture2D" uid="uid://dfroqy6y156fx" path="res://assets/iconos/folder-blue-home.svg" id="5_qlthb"]
 [ext_resource type="Texture2D" uid="uid://d1vp2wcuoctwv" path="res://assets/iconos/text.svg" id="7_2d5lg"]
 [ext_resource type="PackedScene" uid="uid://cbmwtnvtuplp2" path="res://src/Texto/texto.tscn" id="8_1u0dl"]
 [ext_resource type="PackedScene" uid="uid://b1if5ttacl8hp" path="res://src/Carpeta/carpeta.tscn" id="9_0wkxa"]
 [ext_resource type="Texture2D" uid="uid://rapd6fxfg0qu" path="res://assets/iconos/folder-blue-pictures.svg" id="10_q2kw1"]
 [ext_resource type="Texture2D" uid="uid://kp85ey737l1i" path="res://assets/iconos/folder-blue.svg" id="11_rxrsu"]
+[ext_resource type="Texture2D" uid="uid://cudv0du0p3mlv" path="res://casos/caso1/imagenes-portfolio/BuenosAires_obeliscoymetro.jpg" id="15_0wkxa"]
+[ext_resource type="PackedScene" uid="uid://c6nqi43hdw1yj" path="res://src/Chat/chat.tscn" id="15_lr0bi"]
+[ext_resource type="Script" uid="uid://by8r7fs8syfyj" path="res://chat.gd" id="16_0xtnm"]
+[ext_resource type="Texture2D" uid="uid://d2fsigsuy01u6" path="res://casos/caso1/imagenes-portfolio/Buenos_Aires_Argentina.JPG" id="16_avwex"]
+[ext_resource type="Resource" uid="uid://5igo287afggi" path="res://casos/caso1/chats/chat_01_mama.tres" id="17_2oi1j"]
+[ext_resource type="Texture2D" uid="uid://brnljr8q7vplx" path="res://casos/caso1/imagenes-portfolio/images2.jpeg" id="17_h4xrn"]
+[ext_resource type="Texture2D" uid="uid://c6rk1xixplp5h" path="res://casos/caso1/imagenes-portfolio/images3.jpeg" id="18_1xojh"]
+[ext_resource type="Resource" uid="uid://d2v5wu1lkhv6" path="res://casos/caso1/chats/chat_02_jorge.tres" id="18_qlthb"]
+[ext_resource type="PackedScene" uid="uid://dyinmj2mlclit" path="res://src/Mail/mail.tscn" id="18_sqyg2"]
+[ext_resource type="Script" uid="uid://b341mvssqe4vw" path="res://mail.gd" id="19_2oi1j"]
+[ext_resource type="Resource" uid="uid://c1jogxw15pfwd" path="res://casos/caso1/chats/chat_03_grupo_fotografos.tres" id="19_3lrnq"]
+[ext_resource type="PackedScene" uid="uid://b20v5hqb4w2fp" path="res://src/Imagen/imagen.tscn" id="19_g5c83"]
+[ext_resource type="Resource" uid="uid://g2cmcn1gk5ud" path="res://casos/caso1/chats/chat_04_tomas.tres" id="20_2d5lg"]
+[ext_resource type="Texture2D" uid="uid://d22kisyaeq7dp" path="res://casos/caso1/presupuesto_revista_urban-1.png" id="20_avwex"]
+[ext_resource type="Resource" uid="uid://cvnqnhriwih4p" path="res://casos/caso1/mails/mail_01_revista_urban.tres" id="20_qlthb"]
+[ext_resource type="Resource" uid="uid://bs5u5ar733vdx" path="res://casos/caso1/chats/chat_05_camila.tres" id="21_1u0dl"]
+[ext_resource type="Resource" uid="uid://e7457pno2q8x" path="res://casos/caso1/mails/mail_02_sofi_portfolio.tres" id="21_3lrnq"]
+[ext_resource type="Resource" uid="uid://crfiahwo26b61" path="res://casos/caso1/mails/mail_03_expensas.tres" id="22_2d5lg"]
+[ext_resource type="Resource" uid="uid://qhmgfsj52ytl" path="res://casos/caso1/mails/mail_04_lucas_a_camila.tres" id="23_1u0dl"]
+[ext_resource type="Resource" uid="uid://bmxaxvw5xbd7h" path="res://casos/caso1/mails/mail_05_camila_a_lucas.tres" id="24_0wkxa"]
+[ext_resource type="Resource" uid="uid://c6qcxgd3lqn66" path="res://casos/caso1/mails/mail_06_lucas_a_tomas.tres" id="25_avwex"]
 [ext_resource type="Texture2D" uid="uid://c46xmycnus7oy" path="res://assets/iconos/system-shutdown.svg" id="25_xj1bk"]
+[ext_resource type="PackedScene" uid="uid://dir6afeorbba6" path="res://src/Mail/contactoMail.tscn" id="26_h4xrn"]
 
 [node name="Desktop" type="Control" unique_id=1349076015 node_paths=PackedStringArray("ventanas")]
 layout_mode = 3
@@ -20,7 +45,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_0xtnm")
-ventanas = [NodePath("Papelera"), NodePath("BorradorMsj"), NodePath("Home"), NodePath("Fotos"), NodePath("Portfolio")]
+ventanas = [NodePath("Papelera"), NodePath("BorradorMsj"), NodePath("Home"), NodePath("Fotos"), NodePath("Portfolio"), NodePath("Presupuestos"), NodePath("Eventos"), NodePath("Notas"), NodePath("Chat"), NodePath("Mail")]
 
 [node name="Fondo" type="TextureRect" parent="." unique_id=619088530]
 show_behind_parent = true
@@ -44,6 +69,20 @@ color = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_top = -1.0
 offset_right = 1152.0
+
+[node name="Icono" parent="Taskbar" unique_id=1751381297 node_paths=PackedStringArray("abrir") instance=ExtResource("3_0v8fh")]
+layout_mode = 0
+offset_left = 8.0
+offset_right = 48.0
+icono = ExtResource("5_nqg2q")
+abrir = NodePath("../../Chat")
+
+[node name="Icono2" parent="Taskbar" unique_id=380811147 node_paths=PackedStringArray("abrir") instance=ExtResource("3_0v8fh")]
+layout_mode = 0
+offset_left = 56.0
+offset_right = 96.0
+icono = ExtResource("4_ibk8h")
+abrir = NodePath("../../Mail")
 
 [node name="Topbar" type="ColorRect" parent="." unique_id=612272436]
 layout_mode = 0
@@ -88,7 +127,7 @@ offset_bottom = 55.0
 text = "Desconectar"
 alignment = 0
 
-[node name="HomeIco" parent="." unique_id=1751381297 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
+[node name="HomeIco" parent="." unique_id=580046054 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
 offset_left = 16.0
 offset_top = 128.0
@@ -127,17 +166,8 @@ nom = "borrador_mensaje_tomas.txt"
 icono = ExtResource("7_2d5lg")
 abrir = NodePath("../../BorradorMsj")
 
-[node name="BorradorMsj" parent="." unique_id=518182917 instance=ExtResource("8_1u0dl")]
-visible = false
-layout_mode = 0
-offset_left = 288.0
-offset_top = 152.0
-offset_right = 608.0
-offset_bottom = 600.0
-texto = "Tomás, sé que estamos peleados pero necesito contarte algo. Encontré algo en unas fotos de un evento y no sé bien qué hacer. Si podemos tomar un café esta semana te cuento."
-nombre = "borrador_mensaje_tomas.txt"
-
 [node name="Home" parent="." unique_id=752054794 instance=ExtResource("9_0wkxa")]
+visible = false
 layout_mode = 0
 offset_left = 136.0
 offset_top = 80.0
@@ -242,7 +272,7 @@ nom = "Notas"
 icono = ExtResource("11_rxrsu")
 abrir = NodePath("../../Notas")
 
-[node name="PlaylistIco" parent="Personal" unique_id=533882480 instance=ExtResource("3_sqyg2")]
+[node name="PlaylistIco" parent="Personal" unique_id=533882480 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
 offset_left = 96.0
 offset_top = 48.0
@@ -250,6 +280,7 @@ offset_right = 176.0
 offset_bottom = 128.0
 nom = "musica_playlist.txt"
 icono = ExtResource("7_2d5lg")
+abrir = NodePath("../../Playlist")
 
 [node name="Portfolio" parent="." unique_id=2037764707 instance=ExtResource("9_0wkxa")]
 visible = false
@@ -260,33 +291,45 @@ offset_right = 1176.0
 offset_bottom = 640.0
 nombre = "Portfolio_2024"
 
-[node name="Archivo" parent="Portfolio" unique_id=1584767004 instance=ExtResource("3_sqyg2")]
+[node name="Archivo" parent="Portfolio" unique_id=1584767004 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
 offset_left = 24.0
 offset_top = 48.0
 offset_right = 104.0
 offset_bottom = 128.0
+nom = "1.png"
+icono = ExtResource("15_0wkxa")
+abrir = NodePath("../../Imagen1")
 
-[node name="Archivo2" parent="Portfolio" unique_id=1905400170 instance=ExtResource("3_sqyg2")]
+[node name="Archivo2" parent="Portfolio" unique_id=1905400170 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
 offset_left = 112.0
 offset_top = 48.0
 offset_right = 192.0
 offset_bottom = 128.0
+nom = "2.png"
+icono = ExtResource("16_avwex")
+abrir = NodePath("../../Imagen2")
 
-[node name="Archivo3" parent="Portfolio" unique_id=709042987 instance=ExtResource("3_sqyg2")]
+[node name="Archivo3" parent="Portfolio" unique_id=709042987 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
 offset_left = 200.0
 offset_top = 48.0
 offset_right = 280.0
 offset_bottom = 128.0
+nom = "3.png"
+icono = ExtResource("17_h4xrn")
+abrir = NodePath("../../Imagen3")
 
-[node name="Archivo4" parent="Portfolio" unique_id=541327238 instance=ExtResource("3_sqyg2")]
+[node name="Archivo4" parent="Portfolio" unique_id=541327238 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
 offset_left = 288.0
 offset_top = 48.0
 offset_right = 368.0
 offset_bottom = 128.0
+nom = "4.png"
+icono = ExtResource("18_1xojh")
+abrir = NodePath("../../Imagen4")
 
 [node name="Presupuestos" parent="." unique_id=1418615731 instance=ExtResource("9_0wkxa")]
 visible = false
@@ -297,33 +340,15 @@ offset_right = 1176.0
 offset_bottom = 640.0
 nombre = "Presupuestos"
 
-[node name="Archivo" parent="Presupuestos" unique_id=1779396230 instance=ExtResource("3_sqyg2")]
+[node name="Archivo" parent="Presupuestos" unique_id=1779396230 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
 offset_left = 24.0
 offset_top = 48.0
 offset_right = 104.0
 offset_bottom = 128.0
-
-[node name="Archivo2" parent="Presupuestos" unique_id=2034862983 instance=ExtResource("3_sqyg2")]
-layout_mode = 0
-offset_left = 112.0
-offset_top = 48.0
-offset_right = 192.0
-offset_bottom = 128.0
-
-[node name="Archivo3" parent="Presupuestos" unique_id=502859907 instance=ExtResource("3_sqyg2")]
-layout_mode = 0
-offset_left = 200.0
-offset_top = 48.0
-offset_right = 280.0
-offset_bottom = 128.0
-
-[node name="Archivo4" parent="Presupuestos" unique_id=1106616328 instance=ExtResource("3_sqyg2")]
-layout_mode = 0
-offset_left = 288.0
-offset_top = 48.0
-offset_right = 368.0
-offset_bottom = 128.0
+nom = "presupuesto_revista_urban.pdf"
+icono = ExtResource("20_avwex")
+abrir = NodePath("../../PDFPresupuesto")
 
 [node name="Eventos" parent="." unique_id=35548659 instance=ExtResource("9_0wkxa")]
 visible = false
@@ -332,35 +357,17 @@ offset_left = 344.0
 offset_top = 192.0
 offset_right = 1176.0
 offset_bottom = 640.0
-nombre = "Presupuestos"
+nombre = "Eventos"
 
-[node name="Archivo" parent="Eventos" unique_id=883073028 instance=ExtResource("3_sqyg2")]
+[node name="Archivo" parent="Eventos" unique_id=883073028 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
 offset_left = 24.0
 offset_top = 48.0
 offset_right = 104.0
 offset_bottom = 128.0
-
-[node name="Archivo2" parent="Eventos" unique_id=1977198156 instance=ExtResource("3_sqyg2")]
-layout_mode = 0
-offset_left = 112.0
-offset_top = 48.0
-offset_right = 192.0
-offset_bottom = 128.0
-
-[node name="Archivo3" parent="Eventos" unique_id=152137686 instance=ExtResource("3_sqyg2")]
-layout_mode = 0
-offset_left = 200.0
-offset_top = 48.0
-offset_right = 280.0
-offset_bottom = 128.0
-
-[node name="Archivo4" parent="Eventos" unique_id=231849810 instance=ExtResource("3_sqyg2")]
-layout_mode = 0
-offset_left = 288.0
-offset_top = 48.0
-offset_right = 368.0
-offset_bottom = 128.0
+nom = "evento_jueves_rossi_import"
+icono = ExtResource("11_rxrsu")
+abrir = NodePath("../../EventoRossi")
 
 [node name="Notas" parent="." unique_id=259994822 instance=ExtResource("9_0wkxa")]
 visible = false
@@ -371,33 +378,172 @@ offset_right = 1176.0
 offset_bottom = 640.0
 nombre = "Notas"
 
-[node name="Archivo" parent="Notas" unique_id=619220071 instance=ExtResource("3_sqyg2")]
+[node name="Archivo" parent="Notas" unique_id=619220071 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
 offset_left = 24.0
 offset_top = 48.0
 offset_right = 104.0
 offset_bottom = 128.0
+nom = "viernes.txt"
+icono = ExtResource("7_2d5lg")
+abrir = NodePath("../../Viernes")
 
-[node name="Archivo2" parent="Notas" unique_id=169655872 instance=ExtResource("3_sqyg2")]
+[node name="EventoRossi" parent="." unique_id=46090589 instance=ExtResource("9_0wkxa")]
+visible = false
+layout_mode = 0
+offset_left = 344.0
+offset_top = 192.0
+offset_right = 1176.0
+offset_bottom = 640.0
+nombre = "Portfolio_2024"
+
+[node name="Archivo" parent="EventoRossi" unique_id=601852530 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 48.0
+offset_right = 104.0
+offset_bottom = 128.0
+nom = "1.png"
+icono = ExtResource("15_0wkxa")
+abrir = NodePath("../../Imagen1")
+
+[node name="Archivo2" parent="EventoRossi" unique_id=2009781874 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
 offset_left = 112.0
 offset_top = 48.0
 offset_right = 192.0
 offset_bottom = 128.0
+nom = "2.png"
+icono = ExtResource("16_avwex")
+abrir = NodePath("../../Imagen2")
 
-[node name="Archivo3" parent="Notas" unique_id=1852284842 instance=ExtResource("3_sqyg2")]
+[node name="Archivo3" parent="EventoRossi" unique_id=463506742 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
 offset_left = 200.0
 offset_top = 48.0
 offset_right = 280.0
 offset_bottom = 128.0
+nom = "3.png"
+icono = ExtResource("17_h4xrn")
+abrir = NodePath("../../Imagen3")
 
-[node name="Archivo4" parent="Notas" unique_id=109131671 instance=ExtResource("3_sqyg2")]
+[node name="Archivo4" parent="EventoRossi" unique_id=1788090257 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
 offset_left = 288.0
 offset_top = 48.0
 offset_right = 368.0
 offset_bottom = 128.0
+nom = "4.png"
+icono = ExtResource("18_1xojh")
+abrir = NodePath("../../Imagen4")
+
+[node name="BorradorMsj" parent="." unique_id=518182917 instance=ExtResource("8_1u0dl")]
+visible = false
+layout_mode = 0
+offset_left = 288.0
+offset_top = 152.0
+offset_right = 608.0
+offset_bottom = 600.0
+texto = "Tomás, sé que estamos peleados pero necesito contarte algo. Encontré algo en unas fotos de un evento y no sé bien qué hacer. Si podemos tomar un café esta semana te cuento."
+nombre = "borrador_mensaje_tomas.txt"
+
+[node name="Chat" parent="." unique_id=306397279 instance=ExtResource("15_lr0bi")]
+visible = false
+layout_mode = 0
+offset_left = 192.0
+offset_top = 56.0
+offset_right = 1024.0
+offset_bottom = 504.0
+chats = Array[ExtResource("16_0xtnm")]([ExtResource("17_2oi1j"), ExtResource("18_qlthb"), ExtResource("19_3lrnq"), ExtResource("20_2d5lg"), ExtResource("21_1u0dl")])
+
+[node name="Chat" parent="Chat" unique_id=1026122103 instance=ExtResource("15_lr0bi")]
+visible = false
+layout_mode = 0
+offset_left = 192.0
+offset_top = 56.0
+offset_right = 1024.0
+offset_bottom = 504.0
+chats = Array[ExtResource("16_0xtnm")]([ExtResource("17_2oi1j"), ExtResource("18_qlthb"), ExtResource("19_3lrnq"), ExtResource("20_2d5lg"), ExtResource("21_1u0dl")])
+
+[node name="Mail" parent="." unique_id=979190687 instance=ExtResource("18_sqyg2")]
+visible = false
+layout_mode = 0
+offset_left = 224.0
+offset_top = 80.0
+offset_right = 928.0
+offset_bottom = 528.0
+mails = Array[ExtResource("19_2oi1j")]([ExtResource("20_qlthb"), ExtResource("21_3lrnq"), ExtResource("22_2d5lg"), ExtResource("23_1u0dl"), ExtResource("24_0wkxa"), ExtResource("25_avwex")])
+contacto_scene = ExtResource("26_h4xrn")
+
+[node name="Playlist" parent="." unique_id=226651584 instance=ExtResource("8_1u0dl")]
+visible = false
+layout_mode = 0
+offset_left = 440.0
+offset_top = 112.0
+offset_right = 760.0
+offset_bottom = 560.0
+texto = "Bohemian Rhapsody - Queen[br]Billie Jean - Michael Jackson[br]Smells Like Teen Spirit - Nirvana[br]Hotel California - Eagles[br]Sweet Child O' Mine - Guns N' Roses[br]Wonderwall - Oasis[br]Shape of You - Ed Sheeran[br]Blinding Lights - The Weeknd[br]Rolling in the Deep - Adele[br]Viva la Vida - Coldplay[br]Uptown Funk - Mark Ronson ft. Bruno Mars[br]Can't Stop - Red Hot Chili Peppers[br]Take On Me - a-ha[br]Livin' on a Prayer - Bon Jovi[br]Lose Yourself - Eminem[br]Bad Romance - Lady Gaga[br]Radioactive - Imagine Dragons[br]Yellow - Coldplay[br]Stressed Out - Twenty One Pilots[br]Mr. Brightside - The Killers"
+nombre = "musica_playlist.txt"
+
+[node name="Viernes" parent="." unique_id=1065756300 instance=ExtResource("8_1u0dl")]
+visible = false
+layout_mode = 0
+offset_left = 440.0
+offset_top = 112.0
+offset_right = 760.0
+offset_bottom = 560.0
+texto = "Viene Cami a las 21.Hablar de las fotos. Con calma.No es para tanto, seguro tiene explicación."
+nombre = "viernes.txt"
+
+[node name="PDFPresupuesto" parent="." unique_id=1616912179 instance=ExtResource("19_g5c83")]
+visible = false
+layout_mode = 0
+offset_left = 288.0
+offset_top = 88.0
+offset_right = 736.0
+offset_bottom = 536.0
+imagen = ExtResource("20_avwex")
+nombre = "presupuesto_revista_urban.pdf"
+
+[node name="Imagen1" parent="." unique_id=1906007932 instance=ExtResource("19_g5c83")]
+visible = false
+layout_mode = 0
+offset_left = 440.0
+offset_top = 168.0
+offset_right = 888.0
+offset_bottom = 616.0
+imagen = ExtResource("15_0wkxa")
+nombre = "1.png"
+
+[node name="Imagen2" parent="." unique_id=1914437953 instance=ExtResource("19_g5c83")]
+visible = false
+layout_mode = 0
+offset_left = 440.0
+offset_top = 168.0
+offset_right = 888.0
+offset_bottom = 616.0
+imagen = ExtResource("16_avwex")
+nombre = "2.png"
+
+[node name="Imagen3" parent="." unique_id=787815324 instance=ExtResource("19_g5c83")]
+visible = false
+layout_mode = 0
+offset_left = 440.0
+offset_top = 168.0
+offset_right = 888.0
+offset_bottom = 616.0
+imagen = ExtResource("17_h4xrn")
+nombre = "3.png"
+
+[node name="Imagen4" parent="." unique_id=1531950433 instance=ExtResource("19_g5c83")]
+visible = false
+layout_mode = 0
+offset_left = 440.0
+offset_top = 168.0
+offset_right = 888.0
+offset_bottom = 616.0
+imagen = ExtResource("18_1xojh")
+nombre = "4.png"
 
 [connection signal="pressed" from="Topbar/Apagar" to="." method="_on_apagar_pressed"]
 [connection signal="pressed" from="Topbar/Panel/Desconectar" to="." method="_on_desconectar_pressed"]

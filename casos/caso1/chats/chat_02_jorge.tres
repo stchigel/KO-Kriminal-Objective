@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="Chat" format=3 uid="uid://d2v5wu1lkhv6"]
+
+[ext_resource type="Texture2D" uid="uid://dhfkpsix2en6l" path="res://assets/icon.svg" id="1_f0mg6"]
+[ext_resource type="Script" uid="uid://gdiumfglcp6n" path="res://mensaje.gd" id="2_7j066"]
+[ext_resource type="Script" uid="uid://by8r7fs8syfyj" path="res://chat.gd" id="3_tl1c6"]
+
+[sub_resource type="Resource" id="Resource_kriha"]
+script = ExtResource("2_7j066")
+text = "Lucas, el agua caliente del edificio no anda, ¿avisaste al encargado?"
+time = "08/10 19:04"
+metadata/_custom_type_script = "uid://gdiumfglcp6n"
+
+[sub_resource type="Resource" id="Resource_ss4fv"]
+script = ExtResource("2_7j066")
+text = "Sí, dijo que viene mañana a revisar."
+time = "08/10 19:15"
+sent = true
+metadata/_custom_type_script = "uid://gdiumfglcp6n"
+
+[sub_resource type="Resource" id="Resource_vzeiv"]
+script = ExtResource("2_7j066")
+text = "Gracias, sos un crack."
+time = "08/10 19:16"
+metadata/_custom_type_script = "uid://gdiumfglcp6n"
+
+[resource]
+script = ExtResource("3_tl1c6")
+nombre = "Jorge (vecino)"
+avatar = ExtResource("1_f0mg6")
+mensajes = Array[ExtResource("2_7j066")]([SubResource("Resource_kriha"), SubResource("Resource_ss4fv"), SubResource("Resource_vzeiv")])
+metadata/_custom_type_script = "uid://by8r7fs8syfyj"

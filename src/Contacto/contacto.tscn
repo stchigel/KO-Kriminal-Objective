@@ -30,9 +30,10 @@ text = "CARLOS GODOT"
 layout_mode = 0
 offset_left = 80.0
 offset_top = 40.0
-offset_right = 192.0
+offset_right = 256.0
 offset_bottom = 56.0
 theme_override_font_sizes/font_size = 10
 text = "Ultimo mensaje"
+autowrap_mode = 2
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]

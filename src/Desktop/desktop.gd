@@ -50,7 +50,7 @@ func aplicar():
 
 
 func _on_apagar_pressed() -> void:
-	$Panel.show()
+	$Topbar/Panel.show()
 
 
 func _on_desconectar_pressed() -> void:
