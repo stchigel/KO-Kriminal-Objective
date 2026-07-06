@@ -30,10 +30,10 @@ expand_mode = 1
 
 [node name="1" type="TextureButton" parent="." unique_id=174640419]
 layout_mode = 0
-offset_left = 154.0
-offset_top = 237.0
-offset_right = 282.0
-offset_bottom = 365.0
+offset_left = 320.0
+offset_top = 240.0
+offset_right = 448.0
+offset_bottom = 368.0
 texture_normal = ExtResource("3_0e2wq")
 texture_pressed = ExtResource("3_0e2wq")
 texture_hover = ExtResource("3_0e2wq")
@@ -42,18 +42,18 @@ texture_focused = ExtResource("3_0e2wq")
 
 [node name="Label" type="Label" parent="1" unique_id=75835322]
 layout_mode = 0
-offset_left = -10.0
-offset_top = 137.0
-offset_right = 143.0
-offset_bottom = 160.0
-text = "Sospechoso 1 - Juan"
+offset_left = -24.0
+offset_top = 136.0
+offset_right = 153.0
+offset_bottom = 159.0
+text = "Caso 1 - La Ultima Foto"
 
 [node name="2" type="TextureButton" parent="." unique_id=1195426718]
 layout_mode = 0
-offset_left = 522.0
-offset_top = 239.0
-offset_right = 650.0
-offset_bottom = 367.0
+offset_left = 704.0
+offset_top = 240.0
+offset_right = 832.0
+offset_bottom = 368.0
 texture_normal = ExtResource("3_0e2wq")
 texture_pressed = ExtResource("3_0e2wq")
 texture_hover = ExtResource("3_0e2wq")
@@ -62,32 +62,10 @@ texture_focused = ExtResource("3_0e2wq")
 
 [node name="Label" type="Label" parent="2" unique_id=1874851686]
 layout_mode = 0
-offset_left = -10.0
-offset_top = 137.0
-offset_right = 143.0
-offset_bottom = 160.0
-text = "Sospechoso 2 - carla"
-
-[node name="3" type="TextureButton" parent="." unique_id=755954914]
-layout_mode = 0
-offset_left = 872.0
-offset_top = 246.0
-offset_right = 1000.0
-offset_bottom = 374.0
-texture_normal = ExtResource("3_0e2wq")
-texture_pressed = ExtResource("3_0e2wq")
-texture_hover = ExtResource("3_0e2wq")
-texture_disabled = ExtResource("3_0e2wq")
-texture_focused = ExtResource("3_0e2wq")
-
-[node name="Label" type="Label" parent="3" unique_id=967343834]
-layout_mode = 0
-offset_left = -10.0
-offset_top = 137.0
-offset_right = 143.0
-offset_bottom = 160.0
-text = "Sospechoso 3 - lol"
+offset_top = 134.0
+offset_right = 128.0
+offset_bottom = 157.0
+text = "Caso 2 - La Obra"
 
 [connection signal="pressed" from="1" to="." method="_on__pressed"]
 [connection signal="pressed" from="2" to="." method="_on_2_pressed"]
-[connection signal="pressed" from="3" to="." method="_on_3_pressed"]

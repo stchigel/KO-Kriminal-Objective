@@ -15,6 +15,18 @@ corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kxwl4"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
 [node name="Intro" type="Control" unique_id=1581055040]
 layout_mode = 3
 anchors_preset = 15
@@ -35,7 +47,7 @@ layout_mode = 0
 offset_left = 380.0
 offset_top = 78.0
 offset_right = 1084.0
-offset_bottom = 526.0
+offset_bottom = 608.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_4vfs6")
 
 [node name="Panel" type="Panel" parent="Mail" unique_id=2023464825]
@@ -75,7 +87,7 @@ layout_mode = 0
 offset_left = 32.0
 offset_right = 704.0
 offset_bottom = 32.0
-text = "ASUNTO"
+text = "Caso 1108-F — Acceso remoto autorizado | Mendez, Lucas R."
 vertical_alignment = 1
 
 [node name="Remitente" type="Label" parent="Mail/MailData" unique_id=2049468720]
@@ -85,7 +97,7 @@ offset_top = 24.0
 offset_right = 128.0
 offset_bottom = 40.0
 theme_override_font_sizes/font_size = 10
-text = "Remitente"
+text = "crim.invest@pjn.gob.ar"
 vertical_alignment = 1
 
 [node name="Cuerpo" type="RichTextLabel" parent="Mail/MailData" unique_id=541549091]
@@ -95,9 +107,50 @@ offset_top = 48.0
 offset_right = 688.0
 offset_bottom = 408.0
 theme_override_font_sizes/normal_font_size = 14
-text = "Hola, agente, te tengo un nuevo caso
-tuntungtung sahur fue encontrado sin vida esta mañana en su departamento de puerto madero
-al lado encontramos fragmentos de una botella de whisky y una zapatilla azul"
+theme_override_font_sizes/bold_font_size = 15
+theme_override_font_sizes/bold_italics_font_size = 14
+theme_override_font_sizes/italics_font_size = 14
+theme_override_font_sizes/mono_font_size = 14
+bbcode_enabled = true
+text = "Agente,
+Se le concede acceso forense al dispositivo digital de Lucas Rodrigo Mendez, DNI 29.441.872, fotógrafo, 34 años. Hallado sin vida el sábado 19 de octubre en su domicilio de Palermo por el vecino del piso de abajo, Sr. Jorge Pinto, quien reportó un golpe fuerte la noche anterior y fue a verificar al día siguiente.
+
+[b]Lo que ya sabemos[/b]
+Causa de muerte: traumatismo craneal. Objeto contundente no encontrado en la escena. No hay signos de robo: billetera, notebook y equipos de fotografía siguen en el departamento. La puerta no fue forzada.
+La cámara principal de Lucas, una Canon EOS R5, no está en el departamento. Es el único objeto que falta.
+
+[b]Lo que necesitamos[/b]
+Reconstruir con quién tuvo contacto Lucas en los últimos 15 días y establecer quién tenía motivo para llevarse esa cámara.
+
+[b]Sospechosos preliminares[/b]
+
+[table=3]
+[cell][i]Nombre[/i][/cell]
+[cell][i]Vínculo[/i][/cell]
+[cell][i]Motivo posible[/i][/cell]
+[cell]Tomás Herrera  [/cell]
+[cell]Ex amigo, rival laboral  [/cell]
+[cell]Pelea reciente, celos profesionales[/cell]
+[cell]Camila Rossi[/cell]
+[cell]Novia[/cell]
+[cell]Sin motivo aparente por ahora[/cell]
+[/table]
+
+El acceso está habilitado.
+
+Lic. Lorena Casás
+[i]Coordinadora — Unidad de Criminalística Digital[/i]
+"
+
+[node name="Remitente2" type="Label" parent="." unique_id=1623992214]
+layout_mode = 0
+offset_left = 392.0
+offset_top = 528.0
+offset_right = 504.0
+offset_bottom = 544.0
+theme_override_font_sizes/font_size = 10
+text = "Adjuntos"
+vertical_alignment = 1
 
 [node name="K_o_" type="TextureRect" parent="." unique_id=239437778]
 layout_mode = 0
@@ -110,13 +163,22 @@ expand_mode = 1
 
 [node name="Button" type="Button" parent="." unique_id=1608764180]
 layout_mode = 0
-offset_left = 403.0
-offset_top = 535.0
-offset_right = 674.0
-offset_bottom = 641.0
-text = "Entrar"
+offset_left = 392.0
+offset_top = 544.0
+offset_right = 592.0
+offset_bottom = 600.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_kxwl4")
 
-[connection signal="gui_input" from="Mail/Panel" to="Mail" method="_on_panel_gui_input"]
-[connection signal="pressed" from="Mail/Button" to="Mail" method="_on_button_pressed"]
-[connection signal="pressed" from="Mail/MailData/Volver" to="Mail" method="_on_volver_pressed"]
+[node name="Remitente3" type="Label" parent="Button" unique_id=1713648418]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 120.0
+offset_bottom = 24.0
+theme_override_font_sizes/font_size = 10
+text = "Acceso a pc"
+vertical_alignment = 1
+
+[connection signal="pressed" from="Mail/Button" to="." method="_on_buttonclose_pressed"]
+[connection signal="pressed" from="Mail/MailData/Volver" to="." method="_on_volver_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

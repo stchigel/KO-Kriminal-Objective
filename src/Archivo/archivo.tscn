@@ -36,4 +36,30 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 1
 
+[node name="Panel" type="Panel" parent="." unique_id=840617257]
+visible = false
+layout_mode = 0
+offset_left = 80.0
+offset_top = 32.0
+offset_right = 216.0
+offset_bottom = 96.0
+
+[node name="Label" type="Label" parent="Panel" unique_id=1507760306]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 128.0
+offset_bottom = 24.0
+theme_override_font_sizes/font_size = 10
+text = "Introduzca la contraseña"
+
+[node name="LineEdit" type="LineEdit" parent="Panel" unique_id=550173363]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 24.0
+offset_right = 128.0
+offset_bottom = 52.0
+theme_override_font_sizes/font_size = 14
+
 [connection signal="pressed" from="." to="." method="_on_pressed"]
+[connection signal="text_submitted" from="Panel/LineEdit" to="." method="_on_line_edit_text_submitted"]

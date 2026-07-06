@@ -38,6 +38,7 @@ func _draw():
 		draw_rect(rect, Color(0.3, 0.5, 1.0, 0.8), false, 1.0)
 
 func aplicar():
+	$Topbar/Panel.hide()
 	var rect = Rect2(start_pos, current_pos - start_pos).abs()
 	for item in get_children():
 		var item_rect = Rect2(item.position, item.size)
@@ -46,3 +47,11 @@ func aplicar():
 				item.select()
 			else:
 				item.deselect()
+
+
+func _on_apagar_pressed() -> void:
+	$Panel.show()
+
+
+func _on_desconectar_pressed() -> void:
+	get_tree().change_scene_to_file("res://src/Seleccion/seleccion.tscn")

@@ -1,5 +1,6 @@
 extends Button
 @export var nom: String = "default.txt"
+@export var contra: String
 @export var icono: Texture2D = preload("res://assets/icon.svg")
 @export var oculto: bool
 @export var abrir: Node
@@ -10,6 +11,7 @@ func _ready() -> void:
 	$icono.texture = icono
 	$name.text = nom
 	$caja.hide()
+	$Panel.hide()
 	if oculto:
 		$".".hide()
 		$icono.hide()
@@ -47,8 +49,16 @@ func _gui_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton \
 	and event.button_index == MOUSE_BUTTON_LEFT and event.pressed and event.double_click:
 		if abrir:
-			abrir.show()
+			if contra:
+				$Panel.show()
+			else:
+				abrir.show()
 
 #func _on_pressed() -> void:
 #	if abrir:
 #		abrir.show()
+
+
+func _on_line_edit_text_submitted(new_text: String) -> void:
+	if new_text==contra:
+		abrir.show()

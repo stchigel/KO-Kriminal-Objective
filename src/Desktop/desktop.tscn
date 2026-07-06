@@ -17,28 +17,16 @@
 [ext_resource type="PackedScene" uid="uid://dyinmj2mlclit" path="res://src/Mail/mail.tscn" id="13_w8gr4"]
 [ext_resource type="Script" uid="uid://b341mvssqe4vw" path="res://mail.gd" id="14_40vof"]
 [ext_resource type="PackedScene" uid="uid://dir6afeorbba6" path="res://src/Mail/contactoMail.tscn" id="15_kaepd"]
+[ext_resource type="Resource" uid="uid://cvnqnhriwih4p" path="res://casos/caso1/mails/mail_01_revista_urban.tres" id="15_ljj6e"]
+[ext_resource type="Resource" uid="uid://e7457pno2q8x" path="res://casos/caso1/mails/mail_02_sofi_portfolio.tres" id="16_fktsi"]
 [ext_resource type="Texture2D" uid="uid://difcjwmcktrmn" path="res://assets/iconos/email.svg" id="17_40vof"]
-
-[sub_resource type="Resource" id="Resource_wemud"]
-script = ExtResource("14_40vof")
-nombre = "GOOGLE"
-asunto = "HOOOOOLAAAAAAAAAAA"
-mensaje = "LORIEMEF PISUMMUMUMUMJUMUMU"
-metadata/_custom_type_script = "uid://b341mvssqe4vw"
-
-[sub_resource type="Resource" id="Resource_w8gr4"]
-script = ExtResource("14_40vof")
-nombre = "Lololol"
-asunto = "Troleado putooooo"
-mensaje = "tun tunununun tnunun un nun (musica coscu)"
-metadata/_custom_type_script = "uid://b341mvssqe4vw"
-
-[sub_resource type="Resource" id="Resource_7mirj"]
-script = ExtResource("14_40vof")
-nombre = "Carla"
-asunto = "PERDON"
-mensaje = "Perdoname por las fotos lya las borro"
-metadata/_custom_type_script = "uid://b341mvssqe4vw"
+[ext_resource type="Resource" uid="uid://crfiahwo26b61" path="res://casos/caso1/mails/mail_03_expensas.tres" id="17_vkhbb"]
+[ext_resource type="Resource" uid="uid://qhmgfsj52ytl" path="res://casos/caso1/mails/mail_04_lucas_a_camila.tres" id="18_hafc4"]
+[ext_resource type="Texture2D" uid="uid://c46xmycnus7oy" path="res://assets/iconos/system-shutdown.svg" id="19_8knyr"]
+[ext_resource type="Resource" uid="uid://bmxaxvw5xbd7h" path="res://casos/caso1/mails/mail_05_camila_a_lucas.tres" id="19_le2re"]
+[ext_resource type="Resource" uid="uid://c6qcxgd3lqn66" path="res://casos/caso1/mails/mail_06_lucas_a_tomas.tres" id="20_c71qu"]
+[ext_resource type="PackedScene" uid="uid://b20v5hqb4w2fp" path="res://src/Imagen/imagen.tscn" id="26_vkhbb"]
+[ext_resource type="Texture2D" uid="uid://b0eysjn7s5kwv" path="res://assets/Kali-Linux.jpg" id="27_hafc4"]
 
 [node name="Desktop" type="Control" unique_id=1349076015 node_paths=PackedStringArray("ventanas")]
 layout_mode = 3
@@ -48,7 +36,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_p6cdx")
-ventanas = [null, NodePath("Texto"), NodePath("Carpeta"), NodePath("Texto2"), NodePath("Chat"), NodePath("Mail")]
+ventanas = [null, NodePath("Texto"), NodePath("Carpeta"), NodePath("Texto2"), NodePath("Chat"), NodePath("Mail"), NodePath("Imagen")]
 
 [node name="KaliLinux" type="TextureRect" parent="." unique_id=619088530]
 show_behind_parent = true
@@ -89,14 +77,15 @@ offset_bottom = 296.0
 nom = "Nada"
 icono = ExtResource("6_c8d7w")
 
-[node name="Archivo4" parent="." unique_id=831364882 instance=ExtResource("2_52vt5")]
+[node name="Archivo4" parent="." unique_id=831364882 node_paths=PackedStringArray("abrir") instance=ExtResource("2_52vt5")]
 layout_mode = 0
 offset_left = 16.0
 offset_top = 304.0
 offset_right = 96.0
 offset_bottom = 384.0
-nom = "Nada"
+nom = "Imagenwow"
 icono = ExtResource("6_c8d7w")
+abrir = NodePath("../Imagen")
 
 [node name="Oculto" parent="." unique_id=828514605 node_paths=PackedStringArray("abrir") instance=ExtResource("2_52vt5")]
 layout_mode = 0
@@ -160,8 +149,7 @@ offset_left = 224.0
 offset_top = 80.0
 offset_right = 928.0
 offset_bottom = 528.0
-mails = Array[ExtResource("14_40vof")]([SubResource("Resource_wemud"), SubResource("Resource_w8gr4")])
-borradores = Array[ExtResource("14_40vof")]([SubResource("Resource_7mirj")])
+mails = Array[ExtResource("14_40vof")]([ExtResource("15_ljj6e"), ExtResource("16_fktsi"), ExtResource("17_vkhbb"), ExtResource("18_hafc4"), ExtResource("19_le2re"), ExtResource("20_c71qu")])
 contacto_scene = ExtResource("15_kaepd")
 
 [node name="Taskbar" type="ColorRect" parent="." unique_id=819574114]
@@ -204,7 +192,43 @@ offset_bottom = 25.0
 
 [node name="Label" type="Label" parent="Topbar" unique_id=579693379]
 layout_mode = 0
-offset_left = 1088.0
-offset_right = 1152.0
+offset_left = 1080.0
+offset_right = 1144.0
 offset_bottom = 24.0
 text = "12:00"
+
+[node name="Apagar" type="Button" parent="Topbar" unique_id=983567400]
+layout_mode = 0
+offset_left = 1128.0
+offset_right = 1152.0
+offset_bottom = 24.0
+icon = ExtResource("19_8knyr")
+expand_icon = true
+
+[node name="Panel" type="Panel" parent="Topbar" unique_id=1573607627]
+visible = false
+layout_mode = 0
+offset_left = 992.0
+offset_top = 24.0
+offset_right = 1152.0
+offset_bottom = 80.0
+
+[node name="Desconectar" type="Button" parent="Topbar/Panel" unique_id=1057732773]
+layout_mode = 0
+offset_top = 24.0
+offset_right = 160.0
+offset_bottom = 55.0
+text = "Desconectar"
+alignment = 0
+
+[node name="Imagen" parent="." unique_id=929851698 instance=ExtResource("26_vkhbb")]
+visible = false
+layout_mode = 0
+offset_left = 288.0
+offset_top = 64.0
+offset_right = 736.0
+offset_bottom = 512.0
+imagen = ExtResource("27_hafc4")
+
+[connection signal="pressed" from="Topbar/Apagar" to="." method="_on_apagar_pressed"]
+[connection signal="pressed" from="Topbar/Panel/Desconectar" to="." method="_on_desconectar_pressed"]

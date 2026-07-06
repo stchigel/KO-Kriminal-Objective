@@ -15,6 +15,18 @@ corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7mirj"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
 [node name="Mail" type="Panel" unique_id=1796508400]
 offset_right = 704.0
 offset_bottom = 448.0
@@ -75,6 +87,7 @@ layout_mode = 0
 offset_top = 32.0
 offset_right = 704.0
 offset_bottom = 448.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_7mirj")
 
 [node name="Volver" type="Button" parent="MailData" unique_id=1576926818]
 layout_mode = 0
