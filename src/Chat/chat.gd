@@ -15,7 +15,7 @@ func _ready() -> void:
 	for chat in chats:
 		var cont = contacto_scene.instantiate()
 		cont.chat = chat
-		cont.custom_minimum_size.y = 75
+		cont.custom_minimum_size.y = 63
 		cont.custom_minimum_size.x = 300
 		$ScrollContainer2/VBoxContainer.add_child(cont)
 

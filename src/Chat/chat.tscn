@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://bw3ggorp0vr77" path="res://src/Burbuja/burbuja.tscn" id="2_xwf2f"]
 [ext_resource type="PackedScene" uid="uid://dc40rllqxwshx" path="res://src/Burbuja/burbuja2.tscn" id="3_g4see"]
 [ext_resource type="PackedScene" uid="uid://d34bwkgdh85v6" path="res://src/Contacto/contacto.tscn" id="4_qur7i"]
+[ext_resource type="Texture2D" uid="uid://dd1fkqvw3jhuh" path="res://assets/iconos/whatsapp.png" id="5_it0sp"]
+[ext_resource type="Texture2D" uid="uid://comvsw34ed57w" path="res://assets/iconos/tres-puntos.png" id="6_cw773"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ahdgd"]
 content_margin_left = 0.0
@@ -31,11 +33,21 @@ layout_mode = 0
 offset_right = 832.0
 offset_bottom = 32.0
 
-[node name="Label" type="Label" parent="." unique_id=1381323080]
+[node name="icono" type="TextureRect" parent="." unique_id=997313740]
 layout_mode = 0
 offset_left = 8.0
-offset_right = 320.0
+offset_top = 2.0
+offset_right = 35.0
+offset_bottom = 29.0
+texture = ExtResource("5_it0sp")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="." unique_id=1381323080]
+layout_mode = 0
+offset_left = 40.0
+offset_right = 352.0
 offset_bottom = 32.0
+theme_override_font_sizes/font_size = 15
 text = "Whatsapp"
 vertical_alignment = 1
 
@@ -46,26 +58,49 @@ offset_right = 832.0
 offset_bottom = 32.0
 text = "X"
 
+[node name="Panel2" type="Panel" parent="." unique_id=407364904]
+layout_mode = 0
+offset_top = 32.0
+offset_right = 268.0
+offset_bottom = 446.0
+
+[node name="Label" type="Label" parent="Panel2" unique_id=1305655411]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 7.0
+offset_right = 320.0
+offset_bottom = 39.0
+theme_override_font_sizes/font_size = 15
+text = "Chats"
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel2" unique_id=739534305]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 17.0
+offset_right = 251.0
+offset_bottom = 30.600002
+texture = ExtResource("6_cw773")
+expand_mode = 1
+
+[node name="ScrollContainer2" type="ScrollContainer" parent="." unique_id=1030605551]
+layout_mode = 0
+offset_top = 78.0
+offset_right = 268.0
+offset_bottom = 448.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer2" unique_id=1054487447]
+layout_mode = 2
+
 [node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=966217828]
 layout_mode = 0
-offset_left = 320.0
+offset_left = 269.0
 offset_top = 32.0
 offset_right = 832.0
 offset_bottom = 448.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer" unique_id=1914196727]
 layout_mode = 2
-offset_transform_enabled = true
-
-[node name="ScrollContainer2" type="ScrollContainer" parent="." unique_id=1030605551]
-layout_mode = 0
-offset_top = 32.0
-offset_right = 320.0
-offset_bottom = 448.0
-
-[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer2" unique_id=1054487447]
-layout_mode = 2
-offset_transform_enabled = true
 
 [connection signal="gui_input" from="Panel" to="." method="_on_panel_gui_input"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

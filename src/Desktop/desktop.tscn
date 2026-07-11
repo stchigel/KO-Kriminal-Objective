@@ -9,7 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://kp85ey737l1i" path="res://assets/iconos/folder-blue.svg" id="6_c8d7w"]
 [ext_resource type="PackedScene" uid="uid://b1if5ttacl8hp" path="res://src/Carpeta/carpeta.tscn" id="6_jq181"]
 [ext_resource type="PackedScene" uid="uid://c6nqi43hdw1yj" path="res://src/Chat/chat.tscn" id="7_ag723"]
-[ext_resource type="Texture2D" uid="uid://bqdvgkvq5agmy" path="res://assets/iconos/whatsapp.svg" id="7_w8gr4"]
 [ext_resource type="Texture2D" uid="uid://d1vp2wcuoctwv" path="res://assets/iconos/text.svg" id="8_40vof"]
 [ext_resource type="Script" uid="uid://by8r7fs8syfyj" path="res://chat.gd" id="8_cbipd"]
 [ext_resource type="Resource" uid="uid://cocb0gxevofpn" path="res://chatTest.tres" id="9_3gr61"]
@@ -19,12 +18,13 @@
 [ext_resource type="PackedScene" uid="uid://dir6afeorbba6" path="res://src/Mail/contactoMail.tscn" id="15_kaepd"]
 [ext_resource type="Resource" uid="uid://cvnqnhriwih4p" path="res://casos/caso1/mails/mail_01_revista_urban.tres" id="15_ljj6e"]
 [ext_resource type="Resource" uid="uid://e7457pno2q8x" path="res://casos/caso1/mails/mail_02_sofi_portfolio.tres" id="16_fktsi"]
-[ext_resource type="Texture2D" uid="uid://difcjwmcktrmn" path="res://assets/iconos/email.svg" id="17_40vof"]
 [ext_resource type="Resource" uid="uid://crfiahwo26b61" path="res://casos/caso1/mails/mail_03_expensas.tres" id="17_vkhbb"]
 [ext_resource type="Resource" uid="uid://qhmgfsj52ytl" path="res://casos/caso1/mails/mail_04_lucas_a_camila.tres" id="18_hafc4"]
 [ext_resource type="Texture2D" uid="uid://c46xmycnus7oy" path="res://assets/iconos/system-shutdown.svg" id="19_8knyr"]
 [ext_resource type="Resource" uid="uid://bmxaxvw5xbd7h" path="res://casos/caso1/mails/mail_05_camila_a_lucas.tres" id="19_le2re"]
 [ext_resource type="Resource" uid="uid://c6qcxgd3lqn66" path="res://casos/caso1/mails/mail_06_lucas_a_tomas.tres" id="20_c71qu"]
+[ext_resource type="Texture2D" uid="uid://dd1fkqvw3jhuh" path="res://assets/iconos/whatsapp.png" id="23_vkhbb"]
+[ext_resource type="Texture2D" uid="uid://cwm5n30whta10" path="res://assets/iconos/gmail.png" id="24_vkhbb"]
 [ext_resource type="PackedScene" uid="uid://b20v5hqb4w2fp" path="res://src/Imagen/imagen.tscn" id="26_vkhbb"]
 [ext_resource type="Texture2D" uid="uid://b0eysjn7s5kwv" path="res://assets/Kali-Linux.jpg" id="27_hafc4"]
 
@@ -163,14 +163,14 @@ color = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_left = 8.0
 offset_right = 48.0
-icono = ExtResource("7_w8gr4")
+icono = ExtResource("23_vkhbb")
 abrir = NodePath("../../Chat")
 
 [node name="Icono2" parent="Taskbar" unique_id=212309803 node_paths=PackedStringArray("abrir") instance=ExtResource("11_3gr61")]
 layout_mode = 0
 offset_left = 56.0
 offset_right = 96.0
-icono = ExtResource("17_40vof")
+icono = ExtResource("24_vkhbb")
 abrir = NodePath("../../Mail")
 
 [node name="Linea" type="ColorRect" parent="Taskbar" unique_id=1724619204]

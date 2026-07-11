@@ -30,7 +30,7 @@ fit_content = true
 [node name="Polygon2D" type="Polygon2D" parent="." unique_id=981333470]
 position = Vector2(-1048, -258.98907)
 scale = Vector2(4.8, 4.1684775)
-color = Color(0, 0.6313726, 0.14509805, 1)
+color = Color(0.078431375, 0.32156864, 0.22352941, 1)
 polygon = PackedVector2Array(309.99997, 78.92307, 310, 86, 304.99997, 78.92307, 307.56146, 78.92307)
 
 [node name="Texto2" type="RichTextLabel" parent="." unique_id=1346602150]
