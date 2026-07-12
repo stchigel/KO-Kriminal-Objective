@@ -10,7 +10,7 @@ var drag_offset: Vector2 = Vector2.ZERO
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$MailData.hide()
-	$Label.text = nombre
+	$Panel/Label.text = nombre
 	cargar_mails(mails)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
