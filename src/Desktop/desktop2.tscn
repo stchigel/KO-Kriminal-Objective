@@ -18,7 +18,6 @@
 [ext_resource type="Texture2D" uid="uid://sb7ebwd447eg" path="res://casos/caso2/imagenes-portfolio/images4rewtert.jpeg" id="16_ksuw2"]
 [ext_resource type="Texture2D" uid="uid://cyagtm7tx7h8s" path="res://casos/caso2/imagenes-portfolio/images6565356346534563465.jpeg" id="17_icwqw"]
 [ext_resource type="Texture2D" uid="uid://yvmvut6ku4v3" path="res://casos/caso2/imagenes-portfolio/IMG_6776-e1710280777427.jpg" id="18_5deg5"]
-[ext_resource type="Texture2D" uid="uid://d22kisyaeq7dp" path="res://casos/caso1/presupuesto_revista_urban-1.png" id="19_cflyj"]
 [ext_resource type="Texture2D" uid="uid://cytdyhw5tjuho" path="res://assets/iconos/file-roller.svg" id="20_wubdy"]
 [ext_resource type="PackedScene" uid="uid://cbmwtnvtuplp2" path="res://src/Texto/texto.tscn" id="35_31h3k"]
 [ext_resource type="PackedScene" uid="uid://c6nqi43hdw1yj" path="res://src/Chat/chat.tscn" id="36_ultrf"]
@@ -26,11 +25,17 @@
 [ext_resource type="Resource" uid="uid://bx1dante00004" path="res://casos/caso2/chats/chat_dante_ferreyra.tres" id="38_na10m"]
 [ext_resource type="Resource" uid="uid://bx1lmali00006" path="res://casos/caso2/chats/chat_lm.tres" id="39_ioh2q"]
 [ext_resource type="Resource" uid="uid://bx1machi00005" path="res://casos/caso2/chats/chat_lorenzo_machi.tres" id="40_y8wib"]
+[ext_resource type="PackedScene" uid="uid://bwvp6h7loaqt5" path="res://src/Pdf/pdf.tscn" id="41_2ysms"]
 [ext_resource type="Resource" uid="uid://dwv3i1ja36rfe" path="res://casos/caso2/chats/chat_los_del_martes.tres" id="41_o3fyi"]
 [ext_resource type="Resource" uid="uid://bx1lucia00001" path="res://casos/caso2/chats/chat_lucia.tres" id="42_aplfl"]
+[ext_resource type="Texture2D" uid="uid://dwkimyyg73gmh" path="res://casos/caso2/archivos/generados_informe_cruzado_tres_obras-1.png" id="42_dv3d5"]
 [ext_resource type="PackedScene" uid="uid://dyinmj2mlclit" path="res://src/Mail/mail.tscn" id="43_42b1v"]
+[ext_resource type="Texture2D" uid="uid://nw8h7rf0ha51" path="res://casos/caso2/archivos/generados_informe_cruzado_tres_obras-2.png" id="43_l8brs"]
 [ext_resource type="Resource" uid="uid://bx1rosa000002" path="res://casos/caso2/chats/chat_rosa.tres" id="43_xpo2s"]
 [ext_resource type="Script" uid="uid://b341mvssqe4vw" path="res://mail.gd" id="44_cd3q7"]
+[ext_resource type="Texture2D" uid="uid://d12hb8sds3let" path="res://casos/caso2/archivos/generados_contrato_consultoria_2021-1.png" id="44_g0n10"]
+[ext_resource type="Texture2D" uid="uid://conhavx6wfbar" path="res://casos/caso2/archivos/generados_carta_para_fiscalia-1.png" id="45_k2ypf"]
+[ext_resource type="Texture2D" uid="uid://cjsxk5pgdnvqg" path="res://casos/caso2/archivos/generados_carta_para_fiscalia-2.png" id="46_ar010"]
 [ext_resource type="Resource" path="res://casos/caso2/mails/mail_catalogo_subastas.tres" id="46_xo84d"]
 [ext_resource type="Resource" path="res://casos/caso2/mails/mail_expensas.tres" id="47_f7x1e"]
 [ext_resource type="Resource" path="res://casos/caso2/mails/mail_ferreyra_reunion.tres" id="48_nlfvl"]
@@ -353,8 +358,8 @@ offset_top = 48.0
 offset_right = 104.0
 offset_bottom = 128.0
 nom = "contrato_consultoria_2021.pdf"
-icono = ExtResource("19_cflyj")
-abrir = NodePath("../../PDFPresupuesto")
+icono = ExtResource("44_g0n10")
+abrir = NodePath("../../PdfContrato")
 
 [node name="Analisis" parent="." unique_id=1613714675 instance=ExtResource("11_aplfl")]
 visible = false
@@ -372,8 +377,8 @@ offset_top = 48.0
 offset_right = 104.0
 offset_bottom = 128.0
 nom = "informe_cruzado_tres_obras.pdf"
-icono = ExtResource("19_cflyj")
-abrir = NodePath("../../PDFAnalisis")
+icono = ExtResource("42_dv3d5")
+abrir = NodePath("../../PdfAnalisis")
 
 [node name="Respaldo" parent="." unique_id=1357343356 instance=ExtResource("11_aplfl")]
 visible = false
@@ -411,7 +416,8 @@ offset_top = 48.0
 offset_right = 96.0
 offset_bottom = 128.0
 nom = "carta_para_fiscalia.pdf"
-abrir = NodePath("../../PDFFiscalia")
+icono = ExtResource("45_k2ypf")
+abrir = NodePath("../../PdfFiscalia")
 
 [node name="BorradorMsj" parent="." unique_id=518182917 instance=ExtResource("35_31h3k")]
 visible = false
@@ -462,36 +468,6 @@ offset_bottom = 560.0
 texto = "Guillermo: si estás leyendo esto es porque no llegué a la reunión.En la carpeta oculta .respaldo_nov está el archivo paquete_final.7z.La contraseña es el nombre del cuadro que vimos juntos en Venecia más el año en que lo vimos. Solo vos lo sabés.Artes del Sur SRL es de Machi. Iturbe es su testaferro.Ferreyra sabía. Llevá todo a la fiscalía penal."
 nombre = "nota_para_guillermo.txt"
 
-[node name="PDFAnalisis" parent="." unique_id=1691670839 instance=ExtResource("52_wgoci")]
-visible = false
-layout_mode = 0
-offset_left = 168.0
-offset_top = 32.0
-offset_right = 928.0
-offset_bottom = 576.0
-imagen = ExtResource("19_cflyj")
-nombre = "informe_cruzado_tres_obras.pdf"
-
-[node name="PDFPresupuesto" parent="." unique_id=1616912179 instance=ExtResource("52_wgoci")]
-visible = false
-layout_mode = 0
-offset_left = 168.0
-offset_top = 32.0
-offset_right = 928.0
-offset_bottom = 576.0
-imagen = ExtResource("19_cflyj")
-nombre = "presupuesto_revista_urban.pdf"
-
-[node name="PDFFiscalia" parent="." unique_id=565436250 instance=ExtResource("52_wgoci")]
-visible = false
-layout_mode = 0
-offset_left = 168.0
-offset_top = 32.0
-offset_right = 928.0
-offset_bottom = 576.0
-imagen = ExtResource("19_cflyj")
-nombre = "carta_para_fiscalia.pdf"
-
 [node name="Imagen1" parent="." unique_id=1906007932 instance=ExtResource("52_wgoci")]
 visible = false
 layout_mode = 0
@@ -531,6 +507,36 @@ offset_right = 888.0
 offset_bottom = 616.0
 imagen = ExtResource("18_5deg5")
 nombre = "4.png"
+
+[node name="PdfAnalisis" parent="." unique_id=1631028395 instance=ExtResource("41_2ysms")]
+visible = false
+layout_mode = 0
+offset_left = 128.0
+offset_top = 32.0
+offset_right = 1024.0
+offset_bottom = 608.0
+nombre = "informe_cruzado_tres_obras.pdf"
+pags = Array[Texture]([ExtResource("42_dv3d5"), ExtResource("43_l8brs")])
+
+[node name="PdfContrato" parent="." unique_id=811506345 instance=ExtResource("41_2ysms")]
+visible = false
+layout_mode = 0
+offset_left = 128.0
+offset_top = 32.0
+offset_right = 1024.0
+offset_bottom = 608.0
+nombre = "contrato_consultoria_2021.pdf"
+pags = Array[Texture]([ExtResource("44_g0n10")])
+
+[node name="PdfFiscalia" parent="." unique_id=260245239 instance=ExtResource("41_2ysms")]
+visible = false
+layout_mode = 0
+offset_left = 128.0
+offset_top = 32.0
+offset_right = 1024.0
+offset_bottom = 608.0
+nombre = "carta_para_fiscalia.pdf"
+pags = Array[Texture]([ExtResource("45_k2ypf"), ExtResource("46_ar010")])
 
 [connection signal="pressed" from="Topbar/Apagar" to="." method="_on_apagar_pressed"]
 [connection signal="pressed" from="Topbar/Panel/Desconectar" to="." method="_on_desconectar_pressed"]

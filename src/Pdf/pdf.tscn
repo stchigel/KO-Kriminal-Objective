@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://b20v5hqb4w2fp"]
+[gd_scene format=3 uid="uid://bwvp6h7loaqt5"]
 
-[ext_resource type="Script" uid="uid://b5dk5snqvfisg" path="res://src/Imagen/imagen.gd" id="1_ikb8k"]
+[ext_resource type="Script" uid="uid://dan8p6au44f76" path="res://src/Pdf/pdf.gd" id="1_ep8ye"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ahdgd"]
 content_margin_left = 0.0
@@ -14,21 +14,21 @@ corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
 
-[node name="Imagen" type="Panel" unique_id=1796508400]
-offset_right = 768.0
-offset_bottom = 544.0
+[node name="Pdf" type="Panel" unique_id=1796508400]
+offset_right = 896.0
+offset_bottom = 576.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_ahdgd")
-script = ExtResource("1_ikb8k")
+script = ExtResource("1_ep8ye")
 
 [node name="Panel" type="Panel" parent="." unique_id=1060858633]
 layout_mode = 0
-offset_right = 768.0
+offset_right = 896.0
 offset_bottom = 32.0
 
 [node name="Button" type="Button" parent="." unique_id=1655886696]
 layout_mode = 0
-offset_left = 736.0
-offset_right = 768.0
+offset_left = 864.0
+offset_right = 896.0
 offset_bottom = 32.0
 text = "X"
 
@@ -40,14 +40,21 @@ offset_bottom = 32.0
 text = "filename.txt"
 vertical_alignment = 1
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1169307115]
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=488570866]
 layout_mode = 0
-offset_left = 8.0
+offset_left = 32.0
 offset_top = 40.0
-offset_right = 758.0
-offset_bottom = 536.0
-expand_mode = 1
-stretch_mode = 5
+offset_right = 864.0
+offset_bottom = 552.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer" unique_id=1948279659]
+layout_mode = 2
+
+[node name="1" type="TextureRect" parent="ScrollContainer/VBoxContainer" unique_id=623933077]
+layout_mode = 2
+
+[node name="2" type="TextureRect" parent="ScrollContainer/VBoxContainer" unique_id=878265507]
+layout_mode = 2
 
 [connection signal="gui_input" from="Panel" to="." method="_on_panel_gui_input"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

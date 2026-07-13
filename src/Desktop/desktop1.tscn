@@ -52,6 +52,7 @@
 [ext_resource type="Texture2D" uid="uid://c48su0kj0huh4" path="res://casos/caso1/archivos/evento_jueves/foto_13(robando).jpeg" id="50_egbpa"]
 [ext_resource type="Texture2D" uid="uid://cuyfw2iuavf6j" path="res://casos/caso1/archivos/evento_jueves/foto_14(robando).jpeg" id="51_em1yl"]
 [ext_resource type="Texture2D" uid="uid://sdfekye6kul2" path="res://casos/caso1/archivos/evento_jueves/foto_15(robando).jpeg" id="52_g7jtt"]
+[ext_resource type="PackedScene" uid="uid://bwvp6h7loaqt5" path="res://src/Pdf/pdf.tscn" id="52_p6eux"]
 
 [node name="Desktop" type="Control" unique_id=1349076015 node_paths=PackedStringArray("ventanas")]
 layout_mode = 3
@@ -622,53 +623,52 @@ offset_bottom = 560.0
 texto = "Viene Cami a las 21.Hablar de las fotos. Con calma.No es para tanto, seguro tiene explicación."
 nombre = "viernes.txt"
 
-[node name="PDFPresupuesto" parent="." unique_id=1616912179 instance=ExtResource("19_g5c83")]
+[node name="PDFPresupuesto" parent="." unique_id=660457332 instance=ExtResource("52_p6eux")]
 visible = false
 layout_mode = 0
-offset_left = 288.0
-offset_top = 88.0
-offset_right = 736.0
-offset_bottom = 536.0
-imagen = ExtResource("20_avwex")
-nombre = "presupuesto_revista_urban.pdf"
+offset_left = 160.0
+offset_top = 40.0
+offset_right = 1056.0
+offset_bottom = 616.0
+pags = Array[Texture]([ExtResource("20_avwex")])
 
 [node name="Imagen1" parent="." unique_id=1906007932 instance=ExtResource("19_g5c83")]
 visible = false
 layout_mode = 0
-offset_left = 440.0
-offset_top = 168.0
-offset_right = 888.0
-offset_bottom = 616.0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 960.0
+offset_bottom = 576.0
 imagen = ExtResource("15_0wkxa")
 nombre = "1.png"
 
 [node name="Imagen2" parent="." unique_id=1914437953 instance=ExtResource("19_g5c83")]
 visible = false
 layout_mode = 0
-offset_left = 440.0
-offset_top = 168.0
-offset_right = 888.0
-offset_bottom = 616.0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 960.0
+offset_bottom = 576.0
 imagen = ExtResource("16_avwex")
 nombre = "2.png"
 
 [node name="Imagen3" parent="." unique_id=787815324 instance=ExtResource("19_g5c83")]
 visible = false
 layout_mode = 0
-offset_left = 440.0
-offset_top = 168.0
-offset_right = 888.0
-offset_bottom = 616.0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 960.0
+offset_bottom = 576.0
 imagen = ExtResource("17_h4xrn")
 nombre = "3.png"
 
 [node name="Imagen4" parent="." unique_id=1531950433 instance=ExtResource("19_g5c83")]
 visible = false
 layout_mode = 0
-offset_left = 440.0
-offset_top = 168.0
-offset_right = 888.0
-offset_bottom = 616.0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 960.0
+offset_bottom = 576.0
 imagen = ExtResource("18_1xojh")
 nombre = "4.png"
 
@@ -676,10 +676,10 @@ nombre = "4.png"
 visible = false
 layout_mode = 1
 anchors_preset = -1
-offset_left = 440.0
-offset_top = 168.0
-offset_right = 888.0
-offset_bottom = 616.0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 960.0
+offset_bottom = 576.0
 imagen = ExtResource("20_upi6q")
 nombre = "1.png"
 
@@ -687,10 +687,10 @@ nombre = "1.png"
 visible = false
 layout_mode = 1
 anchors_preset = -1
-offset_left = 440.0
-offset_top = 168.0
-offset_right = 888.0
-offset_bottom = 616.0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 960.0
+offset_bottom = 576.0
 imagen = ExtResource("39_p6eux")
 nombre = "2.png"
 
@@ -698,10 +698,10 @@ nombre = "2.png"
 visible = false
 layout_mode = 1
 anchors_preset = -1
-offset_left = 440.0
-offset_top = 168.0
-offset_right = 888.0
-offset_bottom = 616.0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 960.0
+offset_bottom = 576.0
 imagen = ExtResource("40_u4sal")
 nombre = "3.png"
 
@@ -709,10 +709,10 @@ nombre = "3.png"
 visible = false
 layout_mode = 1
 anchors_preset = -1
-offset_left = 440.0
-offset_top = 168.0
-offset_right = 888.0
-offset_bottom = 616.0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 960.0
+offset_bottom = 576.0
 imagen = ExtResource("41_1ewgb")
 nombre = "4.png"
 
@@ -720,10 +720,10 @@ nombre = "4.png"
 visible = false
 layout_mode = 1
 anchors_preset = -1
-offset_left = 440.0
-offset_top = 168.0
-offset_right = 888.0
-offset_bottom = 616.0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 960.0
+offset_bottom = 576.0
 imagen = ExtResource("42_femcr")
 nombre = "5.png"
 
@@ -731,10 +731,10 @@ nombre = "5.png"
 visible = false
 layout_mode = 1
 anchors_preset = -1
-offset_left = 440.0
-offset_top = 168.0
-offset_right = 888.0
-offset_bottom = 616.0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 960.0
+offset_bottom = 576.0
 imagen = ExtResource("43_y81d7")
 nombre = "6.png"
 
@@ -742,10 +742,10 @@ nombre = "6.png"
 visible = false
 layout_mode = 1
 anchors_preset = -1
-offset_left = 440.0
-offset_top = 168.0
-offset_right = 888.0
-offset_bottom = 616.0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 960.0
+offset_bottom = 576.0
 imagen = ExtResource("44_1wmi8")
 nombre = "7.png"
 
@@ -753,10 +753,10 @@ nombre = "7.png"
 visible = false
 layout_mode = 1
 anchors_preset = -1
-offset_left = 440.0
-offset_top = 168.0
-offset_right = 888.0
-offset_bottom = 616.0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 960.0
+offset_bottom = 576.0
 imagen = ExtResource("45_4mer2")
 nombre = "8.png"
 
@@ -764,10 +764,10 @@ nombre = "8.png"
 visible = false
 layout_mode = 1
 anchors_preset = -1
-offset_left = 440.0
-offset_top = 168.0
-offset_right = 888.0
-offset_bottom = 616.0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 960.0
+offset_bottom = 576.0
 imagen = ExtResource("46_5f6yg")
 nombre = "9.png"
 
@@ -775,10 +775,10 @@ nombre = "9.png"
 visible = false
 layout_mode = 1
 anchors_preset = -1
-offset_left = 440.0
-offset_top = 168.0
-offset_right = 888.0
-offset_bottom = 616.0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 960.0
+offset_bottom = 576.0
 imagen = ExtResource("47_34t80")
 nombre = "10.png"
 
@@ -786,10 +786,10 @@ nombre = "10.png"
 visible = false
 layout_mode = 1
 anchors_preset = -1
-offset_left = 440.0
-offset_top = 168.0
-offset_right = 888.0
-offset_bottom = 616.0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 960.0
+offset_bottom = 576.0
 imagen = ExtResource("48_g5rwo")
 nombre = "11.png"
 
@@ -797,10 +797,10 @@ nombre = "11.png"
 visible = false
 layout_mode = 1
 anchors_preset = -1
-offset_left = 440.0
-offset_top = 168.0
-offset_right = 888.0
-offset_bottom = 616.0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 960.0
+offset_bottom = 576.0
 imagen = ExtResource("31_upi6q")
 nombre = "12.png"
 
@@ -808,10 +808,10 @@ nombre = "12.png"
 visible = false
 layout_mode = 1
 anchors_preset = -1
-offset_left = 440.0
-offset_top = 168.0
-offset_right = 888.0
-offset_bottom = 616.0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 960.0
+offset_bottom = 576.0
 imagen = ExtResource("50_egbpa")
 nombre = "13.png"
 
@@ -819,10 +819,10 @@ nombre = "13.png"
 visible = false
 layout_mode = 1
 anchors_preset = -1
-offset_left = 440.0
-offset_top = 168.0
-offset_right = 888.0
-offset_bottom = 616.0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 960.0
+offset_bottom = 576.0
 imagen = ExtResource("51_em1yl")
 nombre = "14.png"
 
@@ -830,10 +830,10 @@ nombre = "14.png"
 visible = false
 layout_mode = 1
 anchors_preset = -1
-offset_left = 440.0
-offset_top = 168.0
-offset_right = 888.0
-offset_bottom = 616.0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 960.0
+offset_bottom = 576.0
 imagen = ExtResource("52_g7jtt")
 nombre = "15.png"
 
