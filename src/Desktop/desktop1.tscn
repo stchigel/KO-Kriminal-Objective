@@ -674,153 +674,168 @@ nombre = "4.png"
 
 [node name="ImagenEvento1" parent="." unique_id=1199734745 instance=ExtResource("19_g5c83")]
 visible = false
-layout_mode = 0
-offset_left = 880.0
-offset_top = 336.0
-offset_right = 1328.0
-offset_bottom = 784.0
+layout_mode = 1
+anchors_preset = -1
+offset_left = 440.0
+offset_top = 168.0
+offset_right = 888.0
+offset_bottom = 616.0
 imagen = ExtResource("20_upi6q")
-nombre = "4.png"
+nombre = "1.png"
 
 [node name="ImagenEvento2" parent="." unique_id=1060834922 instance=ExtResource("19_g5c83")]
 visible = false
-layout_mode = 0
-offset_left = 1760.0
-offset_top = 672.0
-offset_right = 2208.0
-offset_bottom = 1120.0
+layout_mode = 1
+anchors_preset = -1
+offset_left = 440.0
+offset_top = 168.0
+offset_right = 888.0
+offset_bottom = 616.0
 imagen = ExtResource("39_p6eux")
-nombre = "4.png"
+nombre = "2.png"
 
 [node name="ImagenEvento3" parent="." unique_id=1700858518 instance=ExtResource("19_g5c83")]
 visible = false
-layout_mode = 0
-offset_left = 1760.0
-offset_top = 672.0
-offset_right = 2208.0
-offset_bottom = 1120.0
+layout_mode = 1
+anchors_preset = -1
+offset_left = 440.0
+offset_top = 168.0
+offset_right = 888.0
+offset_bottom = 616.0
 imagen = ExtResource("40_u4sal")
-nombre = "4.png"
+nombre = "3.png"
 
 [node name="ImagenEvento4" parent="." unique_id=1848693524 instance=ExtResource("19_g5c83")]
 visible = false
-layout_mode = 0
-offset_left = 1760.0
-offset_top = 672.0
-offset_right = 2208.0
-offset_bottom = 1120.0
+layout_mode = 1
+anchors_preset = -1
+offset_left = 440.0
+offset_top = 168.0
+offset_right = 888.0
+offset_bottom = 616.0
 imagen = ExtResource("41_1ewgb")
 nombre = "4.png"
 
 [node name="ImagenEvento5" parent="." unique_id=1282780199 instance=ExtResource("19_g5c83")]
 visible = false
-layout_mode = 0
-offset_left = 1760.0
-offset_top = 672.0
-offset_right = 2208.0
-offset_bottom = 1120.0
+layout_mode = 1
+anchors_preset = -1
+offset_left = 440.0
+offset_top = 168.0
+offset_right = 888.0
+offset_bottom = 616.0
 imagen = ExtResource("42_femcr")
-nombre = "4.png"
+nombre = "5.png"
 
 [node name="ImagenEvento6" parent="." unique_id=1921215682 instance=ExtResource("19_g5c83")]
 visible = false
-layout_mode = 0
-offset_left = 1760.0
-offset_top = 672.0
-offset_right = 2208.0
-offset_bottom = 1120.0
+layout_mode = 1
+anchors_preset = -1
+offset_left = 440.0
+offset_top = 168.0
+offset_right = 888.0
+offset_bottom = 616.0
 imagen = ExtResource("43_y81d7")
-nombre = "4.png"
+nombre = "6.png"
 
 [node name="ImagenEvento7" parent="." unique_id=1496275677 instance=ExtResource("19_g5c83")]
 visible = false
-layout_mode = 0
-offset_left = 1760.0
-offset_top = 672.0
-offset_right = 2208.0
-offset_bottom = 1120.0
+layout_mode = 1
+anchors_preset = -1
+offset_left = 440.0
+offset_top = 168.0
+offset_right = 888.0
+offset_bottom = 616.0
 imagen = ExtResource("44_1wmi8")
-nombre = "4.png"
+nombre = "7.png"
 
 [node name="ImagenEvento8" parent="." unique_id=195853299 instance=ExtResource("19_g5c83")]
 visible = false
-layout_mode = 0
-offset_left = 1760.0
-offset_top = 672.0
-offset_right = 2208.0
-offset_bottom = 1120.0
+layout_mode = 1
+anchors_preset = -1
+offset_left = 440.0
+offset_top = 168.0
+offset_right = 888.0
+offset_bottom = 616.0
 imagen = ExtResource("45_4mer2")
-nombre = "4.png"
+nombre = "8.png"
 
 [node name="ImagenEvento9" parent="." unique_id=1905775115 instance=ExtResource("19_g5c83")]
 visible = false
-layout_mode = 0
-offset_left = 1760.0
-offset_top = 672.0
-offset_right = 2208.0
-offset_bottom = 1120.0
+layout_mode = 1
+anchors_preset = -1
+offset_left = 440.0
+offset_top = 168.0
+offset_right = 888.0
+offset_bottom = 616.0
 imagen = ExtResource("46_5f6yg")
-nombre = "4.png"
+nombre = "9.png"
 
 [node name="ImagenEvento10" parent="." unique_id=2000846262 instance=ExtResource("19_g5c83")]
 visible = false
-layout_mode = 0
-offset_left = 1760.0
-offset_top = 672.0
-offset_right = 2208.0
-offset_bottom = 1120.0
+layout_mode = 1
+anchors_preset = -1
+offset_left = 440.0
+offset_top = 168.0
+offset_right = 888.0
+offset_bottom = 616.0
 imagen = ExtResource("47_34t80")
-nombre = "4.png"
+nombre = "10.png"
 
 [node name="ImagenEvento11" parent="." unique_id=2135415680 instance=ExtResource("19_g5c83")]
 visible = false
-layout_mode = 0
-offset_left = 1760.0
-offset_top = 672.0
-offset_right = 2208.0
-offset_bottom = 1120.0
+layout_mode = 1
+anchors_preset = -1
+offset_left = 440.0
+offset_top = 168.0
+offset_right = 888.0
+offset_bottom = 616.0
 imagen = ExtResource("48_g5rwo")
-nombre = "4.png"
+nombre = "11.png"
 
 [node name="ImagenEvento12" parent="." unique_id=562688740 instance=ExtResource("19_g5c83")]
 visible = false
-layout_mode = 0
-offset_left = 1760.0
-offset_top = 672.0
-offset_right = 2208.0
-offset_bottom = 1120.0
+layout_mode = 1
+anchors_preset = -1
+offset_left = 440.0
+offset_top = 168.0
+offset_right = 888.0
+offset_bottom = 616.0
 imagen = ExtResource("49_budul")
-nombre = "4.png"
+nombre = "12.png"
 
 [node name="ImagenEvento13" parent="." unique_id=686587364 instance=ExtResource("19_g5c83")]
 visible = false
-layout_mode = 0
-offset_left = 1760.0
-offset_top = 672.0
-offset_right = 2208.0
-offset_bottom = 1120.0
+layout_mode = 1
+anchors_preset = -1
+offset_left = 440.0
+offset_top = 168.0
+offset_right = 888.0
+offset_bottom = 616.0
 imagen = ExtResource("50_egbpa")
-nombre = "4.png"
+nombre = "13.png"
 
 [node name="ImagenEvento14" parent="." unique_id=1391156750 instance=ExtResource("19_g5c83")]
 visible = false
-layout_mode = 0
-offset_left = 1760.0
-offset_top = 672.0
-offset_right = 2208.0
-offset_bottom = 1120.0
+layout_mode = 1
+anchors_preset = -1
+offset_left = 440.0
+offset_top = 168.0
+offset_right = 888.0
+offset_bottom = 616.0
 imagen = ExtResource("51_em1yl")
-nombre = "4.png"
+nombre = "14.png"
 
 [node name="ImagenEvento15" parent="." unique_id=1407260479 instance=ExtResource("19_g5c83")]
 visible = false
-layout_mode = 0
-offset_left = 1760.0
-offset_top = 672.0
-offset_right = 2208.0
-offset_bottom = 1120.0
+layout_mode = 1
+anchors_preset = -1
+offset_left = 440.0
+offset_top = 168.0
+offset_right = 888.0
+offset_bottom = 616.0
 imagen = ExtResource("52_g7jtt")
-nombre = "4.png"
+nombre = "15.png"
 
 [connection signal="pressed" from="Topbar/Apagar" to="." method="_on_apagar_pressed"]
 [connection signal="pressed" from="Topbar/Panel/Desconectar" to="." method="_on_desconectar_pressed"]
