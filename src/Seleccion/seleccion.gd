@@ -16,4 +16,4 @@ func _on__pressed() -> void:
 
 
 func _on_2_pressed() -> void:
-	get_tree().change_scene_to_file("res://src/Intro/IntroOld.tscn")
+	get_tree().change_scene_to_file("res://src/Intro/Intro2.tscn")

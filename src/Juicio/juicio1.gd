@@ -3,7 +3,7 @@ var finales=[
 "Camila Rossi fue detenida 48 horas después. La cámara apareció en su departamento, con las fotos de la zona de cajas borradas, pero recuperadas por el equipo forense. Fue imputada por homicidio y hurto agravado. En su declaración dijo que 'no era su intención'. Lucas nunca iba a denunciarla.
 
 [i]Buen trabajo, agente.[/i]"
-,"Tomás Herrera fue interrogado y liberado a las pocas horas. Tenía coartada: estaba en un casamiento esa noche con cincuenta testigos. El caso quedó sin resolver. En algún lugar, Camila Rossi siguió con su vida.
+,"Tomás Herrera fue interrogado y liberado a las pocas horas. Tenía coartada: estaba en un casamiento esa noche con cincuenta testigos. El caso quedó sin resolver. En algún lugar, ██████ █████ siguió con su vida.
 
 [i]Gracias por intentarlo, agente.[/i]"]
 const finalScene=preload("res://src/Final/final.tscn")
