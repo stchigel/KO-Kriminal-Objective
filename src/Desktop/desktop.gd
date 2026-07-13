@@ -1,5 +1,6 @@
 extends Control
 @export var ventanas: Array[Node]
+@export var juicioScene: PackedScene
 var selec := false
 var start_pos := Vector2.ZERO
 var current_pos := Vector2.ZERO
@@ -54,4 +55,4 @@ func _on_apagar_pressed() -> void:
 
 
 func _on_desconectar_pressed() -> void:
-	get_tree().change_scene_to_file("res://src/Seleccion/seleccion.tscn")
+	get_tree().change_scene_to_packed(juicioScene)

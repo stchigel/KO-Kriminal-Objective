@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ci4jsjm8wpw1l"]
 
 [ext_resource type="Script" uid="uid://botiew3pa4beb" path="res://src/Desktop/desktop.gd" id="1_0xtnm"]
+[ext_resource type="PackedScene" uid="uid://bqwttsn3e7m2v" path="res://src/Juicio/juicio1.tscn" id="2_h4xrn"]
 [ext_resource type="Texture2D" uid="uid://x75t1fd57l1c" path="res://assets/kali-linux-wallpaper-v7.png" id="2_oa6j7"]
 [ext_resource type="PackedScene" uid="uid://gvdkmy35w8vf" path="res://src/Icono/icono.tscn" id="3_0v8fh"]
 [ext_resource type="PackedScene" uid="uid://c6loc4d14ok78" path="res://src/Archivo/archivo.tscn" id="3_sqyg2"]
@@ -46,6 +47,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_0xtnm")
 ventanas = [NodePath("Papelera"), NodePath("BorradorMsj"), NodePath("Home"), NodePath("Fotos"), NodePath("Portfolio"), NodePath("Presupuestos"), NodePath("Eventos"), NodePath("Notas"), NodePath("Chat"), NodePath("Mail")]
+juicioScene = ExtResource("2_h4xrn")
 
 [node name="Fondo" type="TextureRect" parent="." unique_id=619088530]
 show_behind_parent = true
