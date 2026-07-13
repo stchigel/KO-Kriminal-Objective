@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Chat" format=3 uid="uid://c1jogxw15pfwd"]
 
-[ext_resource type="Texture2D" uid="uid://dhfkpsix2en6l" path="res://assets/icon.svg" id="1_xgpb5"]
+[ext_resource type="Texture2D" uid="uid://luxeb2m1b6rm" path="res://casos/caso1/chats/ftos-perfil/fotografos.jpg" id="1_xgpb5"]
 [ext_resource type="Script" uid="uid://gdiumfglcp6n" path="res://mensaje.gd" id="2_7j066"]
 [ext_resource type="Script" uid="uid://by8r7fs8syfyj" path="res://chat.gd" id="3_tl1c6"]
 

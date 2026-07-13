@@ -6,9 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://gvdkmy35w8vf" path="res://src/Icono/icono.tscn" id="3_0v8fh"]
 [ext_resource type="PackedScene" uid="uid://c6loc4d14ok78" path="res://src/Archivo/archivo.tscn" id="3_sqyg2"]
 [ext_resource type="Texture2D" uid="uid://j3eejcb1nswt" path="res://assets/iconos/user-trash-full.svg" id="4_2oi1j"]
-[ext_resource type="Texture2D" uid="uid://difcjwmcktrmn" path="res://assets/iconos/email.svg" id="4_ibk8h"]
-[ext_resource type="Texture2D" uid="uid://bqdvgkvq5agmy" path="res://assets/iconos/whatsapp.svg" id="5_nqg2q"]
+[ext_resource type="Texture2D" uid="uid://dd1fkqvw3jhuh" path="res://assets/iconos/whatsapp.png" id="5_h4xrn"]
 [ext_resource type="Texture2D" uid="uid://dfroqy6y156fx" path="res://assets/iconos/folder-blue-home.svg" id="5_qlthb"]
+[ext_resource type="Texture2D" uid="uid://cwm5n30whta10" path="res://assets/iconos/gmail.png" id="6_1xojh"]
 [ext_resource type="Texture2D" uid="uid://d1vp2wcuoctwv" path="res://assets/iconos/text.svg" id="7_2d5lg"]
 [ext_resource type="PackedScene" uid="uid://cbmwtnvtuplp2" path="res://src/Texto/texto.tscn" id="8_1u0dl"]
 [ext_resource type="PackedScene" uid="uid://b1if5ttacl8hp" path="res://src/Carpeta/carpeta.tscn" id="9_0wkxa"]
@@ -29,6 +29,7 @@
 [ext_resource type="Resource" uid="uid://g2cmcn1gk5ud" path="res://casos/caso1/chats/chat_04_tomas.tres" id="20_2d5lg"]
 [ext_resource type="Texture2D" uid="uid://d22kisyaeq7dp" path="res://casos/caso1/presupuesto_revista_urban-1.png" id="20_avwex"]
 [ext_resource type="Resource" uid="uid://cvnqnhriwih4p" path="res://casos/caso1/mails/mail_01_revista_urban.tres" id="20_qlthb"]
+[ext_resource type="Texture2D" uid="uid://d3ep71a3ffp7" path="res://casos/caso1/archivos/evento_jueves/foto_01.png" id="20_upi6q"]
 [ext_resource type="Resource" uid="uid://bs5u5ar733vdx" path="res://casos/caso1/chats/chat_05_camila.tres" id="21_1u0dl"]
 [ext_resource type="Resource" uid="uid://e7457pno2q8x" path="res://casos/caso1/mails/mail_02_sofi_portfolio.tres" id="21_3lrnq"]
 [ext_resource type="Resource" uid="uid://crfiahwo26b61" path="res://casos/caso1/mails/mail_03_expensas.tres" id="22_2d5lg"]
@@ -37,6 +38,20 @@
 [ext_resource type="Resource" uid="uid://c6qcxgd3lqn66" path="res://casos/caso1/mails/mail_06_lucas_a_tomas.tres" id="25_avwex"]
 [ext_resource type="Texture2D" uid="uid://c46xmycnus7oy" path="res://assets/iconos/system-shutdown.svg" id="25_xj1bk"]
 [ext_resource type="PackedScene" uid="uid://dir6afeorbba6" path="res://src/Mail/contactoMail.tscn" id="26_h4xrn"]
+[ext_resource type="Texture2D" uid="uid://1h724ledh0gt" path="res://casos/caso1/archivos/evento_jueves/foto_02.png" id="39_p6eux"]
+[ext_resource type="Texture2D" uid="uid://cmgbgp3jaxilv" path="res://casos/caso1/archivos/evento_jueves/foto_03.png" id="40_u4sal"]
+[ext_resource type="Texture2D" uid="uid://bmi6pia5la8kw" path="res://casos/caso1/archivos/evento_jueves/foto_04.png" id="41_1ewgb"]
+[ext_resource type="Texture2D" uid="uid://bdqs088raeq16" path="res://casos/caso1/archivos/evento_jueves/foto_05.png" id="42_femcr"]
+[ext_resource type="Texture2D" uid="uid://b4stv62kga0wd" path="res://casos/caso1/archivos/evento_jueves/foto_06.png" id="43_y81d7"]
+[ext_resource type="Texture2D" uid="uid://b1n4gdpyi0q2k" path="res://casos/caso1/archivos/evento_jueves/foto_07.png" id="44_1wmi8"]
+[ext_resource type="Texture2D" uid="uid://dkrtmxp3rt64t" path="res://casos/caso1/archivos/evento_jueves/foto_08.png" id="45_4mer2"]
+[ext_resource type="Texture2D" uid="uid://donehxqd8ihoe" path="res://casos/caso1/archivos/evento_jueves/foto_09.png" id="46_5f6yg"]
+[ext_resource type="Texture2D" uid="uid://bgxqutoj4irhc" path="res://casos/caso1/archivos/evento_jueves/foto_10.png" id="47_34t80"]
+[ext_resource type="Texture2D" uid="uid://ctpvhssbrr3nf" path="res://casos/caso1/archivos/evento_jueves/foto_11.png" id="48_g5rwo"]
+[ext_resource type="Texture2D" uid="uid://c42dhcfopq2eu" path="res://casos/caso1/archivos/evento_jueves/foto_12(robando).png" id="49_budul"]
+[ext_resource type="Texture2D" uid="uid://c48su0kj0huh4" path="res://casos/caso1/archivos/evento_jueves/foto_13(robando).jpeg" id="50_egbpa"]
+[ext_resource type="Texture2D" uid="uid://cuyfw2iuavf6j" path="res://casos/caso1/archivos/evento_jueves/foto_14(robando).jpeg" id="51_em1yl"]
+[ext_resource type="Texture2D" uid="uid://sdfekye6kul2" path="res://casos/caso1/archivos/evento_jueves/foto_15(robando).jpeg" id="52_g7jtt"]
 
 [node name="Desktop" type="Control" unique_id=1349076015 node_paths=PackedStringArray("ventanas")]
 layout_mode = 3
@@ -76,14 +91,14 @@ offset_right = 1152.0
 layout_mode = 0
 offset_left = 8.0
 offset_right = 48.0
-icono = ExtResource("5_nqg2q")
+icono = ExtResource("5_h4xrn")
 abrir = NodePath("../../Chat")
 
 [node name="Icono2" parent="Taskbar" unique_id=380811147 node_paths=PackedStringArray("abrir") instance=ExtResource("3_0v8fh")]
 layout_mode = 0
 offset_left = 56.0
 offset_right = 96.0
-icono = ExtResource("4_ibk8h")
+icono = ExtResource("6_1xojh")
 abrir = NodePath("../../Mail")
 
 [node name="Topbar" type="ColorRect" parent="." unique_id=612272436]
@@ -406,8 +421,8 @@ offset_top = 48.0
 offset_right = 104.0
 offset_bottom = 128.0
 nom = "1.png"
-icono = ExtResource("15_0wkxa")
-abrir = NodePath("../../Imagen1")
+icono = ExtResource("20_upi6q")
+abrir = NodePath("../../ImagenEvento1")
 
 [node name="Archivo2" parent="EventoRossi" unique_id=2009781874 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
@@ -416,8 +431,8 @@ offset_top = 48.0
 offset_right = 192.0
 offset_bottom = 128.0
 nom = "2.png"
-icono = ExtResource("16_avwex")
-abrir = NodePath("../../Imagen2")
+icono = ExtResource("39_p6eux")
+abrir = NodePath("../../ImagenEvento2")
 
 [node name="Archivo3" parent="EventoRossi" unique_id=463506742 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
@@ -426,8 +441,8 @@ offset_top = 48.0
 offset_right = 280.0
 offset_bottom = 128.0
 nom = "3.png"
-icono = ExtResource("17_h4xrn")
-abrir = NodePath("../../Imagen3")
+icono = ExtResource("40_u4sal")
+abrir = NodePath("../../ImagenEvento3")
 
 [node name="Archivo4" parent="EventoRossi" unique_id=1788090257 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
@@ -436,8 +451,118 @@ offset_top = 48.0
 offset_right = 368.0
 offset_bottom = 128.0
 nom = "4.png"
-icono = ExtResource("18_1xojh")
-abrir = NodePath("../../Imagen4")
+icono = ExtResource("41_1ewgb")
+abrir = NodePath("../../ImagenEvento4")
+
+[node name="Archivo5" parent="EventoRossi" unique_id=287458738 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 48.0
+offset_right = 368.0
+offset_bottom = 128.0
+nom = "5.png"
+icono = ExtResource("42_femcr")
+abrir = NodePath("../../ImagenEvento5")
+
+[node name="Archivo6" parent="EventoRossi" unique_id=711068561 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 48.0
+offset_right = 368.0
+offset_bottom = 128.0
+nom = "6.png"
+icono = ExtResource("43_y81d7")
+abrir = NodePath("../../ImagenEvento6")
+
+[node name="Archivo7" parent="EventoRossi" unique_id=1881570 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 48.0
+offset_right = 368.0
+offset_bottom = 128.0
+nom = "7.png"
+icono = ExtResource("44_1wmi8")
+abrir = NodePath("../../ImagenEvento7")
+
+[node name="Archivo8" parent="EventoRossi" unique_id=850228193 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 48.0
+offset_right = 368.0
+offset_bottom = 128.0
+nom = "8.png"
+icono = ExtResource("45_4mer2")
+abrir = NodePath("../../ImagenEvento8")
+
+[node name="Archivo9" parent="EventoRossi" unique_id=1064971242 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 48.0
+offset_right = 368.0
+offset_bottom = 128.0
+nom = "9.png"
+icono = ExtResource("46_5f6yg")
+abrir = NodePath("../../ImagenEvento9")
+
+[node name="Archivo10" parent="EventoRossi" unique_id=309645500 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 48.0
+offset_right = 368.0
+offset_bottom = 128.0
+nom = "10.png"
+icono = ExtResource("47_34t80")
+abrir = NodePath("../../ImagenEvento10")
+
+[node name="Archivo11" parent="EventoRossi" unique_id=1036789665 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 48.0
+offset_right = 368.0
+offset_bottom = 128.0
+nom = "11.png"
+icono = ExtResource("48_g5rwo")
+abrir = NodePath("../../ImagenEvento11")
+
+[node name="Archivo12" parent="EventoRossi" unique_id=1655991596 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 48.0
+offset_right = 368.0
+offset_bottom = 128.0
+nom = "12.png"
+icono = ExtResource("49_budul")
+abrir = NodePath("../../ImagenEvento12")
+
+[node name="Archivo13" parent="EventoRossi" unique_id=559034880 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 48.0
+offset_right = 368.0
+offset_bottom = 128.0
+nom = "13.png"
+icono = ExtResource("50_egbpa")
+abrir = NodePath("../../ImagenEvento13")
+
+[node name="Archivo14" parent="EventoRossi" unique_id=1004614250 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 48.0
+offset_right = 368.0
+offset_bottom = 128.0
+nom = "14.png"
+icono = ExtResource("51_em1yl")
+abrir = NodePath("../../ImagenEvento14")
+
+[node name="Archivo15" parent="EventoRossi" unique_id=1505100246 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 48.0
+offset_right = 368.0
+offset_bottom = 128.0
+nom = "15.png"
+icono = ExtResource("52_g7jtt")
+abrir = NodePath("../../ImagenEvento15")
 
 [node name="BorradorMsj" parent="." unique_id=518182917 instance=ExtResource("8_1u0dl")]
 visible = false
@@ -545,6 +670,156 @@ offset_top = 168.0
 offset_right = 888.0
 offset_bottom = 616.0
 imagen = ExtResource("18_1xojh")
+nombre = "4.png"
+
+[node name="ImagenEvento1" parent="." unique_id=1199734745 instance=ExtResource("19_g5c83")]
+visible = false
+layout_mode = 0
+offset_left = 880.0
+offset_top = 336.0
+offset_right = 1328.0
+offset_bottom = 784.0
+imagen = ExtResource("20_upi6q")
+nombre = "4.png"
+
+[node name="ImagenEvento2" parent="." unique_id=1060834922 instance=ExtResource("19_g5c83")]
+visible = false
+layout_mode = 0
+offset_left = 1760.0
+offset_top = 672.0
+offset_right = 2208.0
+offset_bottom = 1120.0
+imagen = ExtResource("39_p6eux")
+nombre = "4.png"
+
+[node name="ImagenEvento3" parent="." unique_id=1700858518 instance=ExtResource("19_g5c83")]
+visible = false
+layout_mode = 0
+offset_left = 1760.0
+offset_top = 672.0
+offset_right = 2208.0
+offset_bottom = 1120.0
+imagen = ExtResource("40_u4sal")
+nombre = "4.png"
+
+[node name="ImagenEvento4" parent="." unique_id=1848693524 instance=ExtResource("19_g5c83")]
+visible = false
+layout_mode = 0
+offset_left = 1760.0
+offset_top = 672.0
+offset_right = 2208.0
+offset_bottom = 1120.0
+imagen = ExtResource("41_1ewgb")
+nombre = "4.png"
+
+[node name="ImagenEvento5" parent="." unique_id=1282780199 instance=ExtResource("19_g5c83")]
+visible = false
+layout_mode = 0
+offset_left = 1760.0
+offset_top = 672.0
+offset_right = 2208.0
+offset_bottom = 1120.0
+imagen = ExtResource("42_femcr")
+nombre = "4.png"
+
+[node name="ImagenEvento6" parent="." unique_id=1921215682 instance=ExtResource("19_g5c83")]
+visible = false
+layout_mode = 0
+offset_left = 1760.0
+offset_top = 672.0
+offset_right = 2208.0
+offset_bottom = 1120.0
+imagen = ExtResource("43_y81d7")
+nombre = "4.png"
+
+[node name="ImagenEvento7" parent="." unique_id=1496275677 instance=ExtResource("19_g5c83")]
+visible = false
+layout_mode = 0
+offset_left = 1760.0
+offset_top = 672.0
+offset_right = 2208.0
+offset_bottom = 1120.0
+imagen = ExtResource("44_1wmi8")
+nombre = "4.png"
+
+[node name="ImagenEvento8" parent="." unique_id=195853299 instance=ExtResource("19_g5c83")]
+visible = false
+layout_mode = 0
+offset_left = 1760.0
+offset_top = 672.0
+offset_right = 2208.0
+offset_bottom = 1120.0
+imagen = ExtResource("45_4mer2")
+nombre = "4.png"
+
+[node name="ImagenEvento9" parent="." unique_id=1905775115 instance=ExtResource("19_g5c83")]
+visible = false
+layout_mode = 0
+offset_left = 1760.0
+offset_top = 672.0
+offset_right = 2208.0
+offset_bottom = 1120.0
+imagen = ExtResource("46_5f6yg")
+nombre = "4.png"
+
+[node name="ImagenEvento10" parent="." unique_id=2000846262 instance=ExtResource("19_g5c83")]
+visible = false
+layout_mode = 0
+offset_left = 1760.0
+offset_top = 672.0
+offset_right = 2208.0
+offset_bottom = 1120.0
+imagen = ExtResource("47_34t80")
+nombre = "4.png"
+
+[node name="ImagenEvento11" parent="." unique_id=2135415680 instance=ExtResource("19_g5c83")]
+visible = false
+layout_mode = 0
+offset_left = 1760.0
+offset_top = 672.0
+offset_right = 2208.0
+offset_bottom = 1120.0
+imagen = ExtResource("48_g5rwo")
+nombre = "4.png"
+
+[node name="ImagenEvento12" parent="." unique_id=562688740 instance=ExtResource("19_g5c83")]
+visible = false
+layout_mode = 0
+offset_left = 1760.0
+offset_top = 672.0
+offset_right = 2208.0
+offset_bottom = 1120.0
+imagen = ExtResource("49_budul")
+nombre = "4.png"
+
+[node name="ImagenEvento13" parent="." unique_id=686587364 instance=ExtResource("19_g5c83")]
+visible = false
+layout_mode = 0
+offset_left = 1760.0
+offset_top = 672.0
+offset_right = 2208.0
+offset_bottom = 1120.0
+imagen = ExtResource("50_egbpa")
+nombre = "4.png"
+
+[node name="ImagenEvento14" parent="." unique_id=1391156750 instance=ExtResource("19_g5c83")]
+visible = false
+layout_mode = 0
+offset_left = 1760.0
+offset_top = 672.0
+offset_right = 2208.0
+offset_bottom = 1120.0
+imagen = ExtResource("51_em1yl")
+nombre = "4.png"
+
+[node name="ImagenEvento15" parent="." unique_id=1407260479 instance=ExtResource("19_g5c83")]
+visible = false
+layout_mode = 0
+offset_left = 1760.0
+offset_top = 672.0
+offset_right = 2208.0
+offset_bottom = 1120.0
+imagen = ExtResource("52_g7jtt")
 nombre = "4.png"
 
 [connection signal="pressed" from="Topbar/Apagar" to="." method="_on_apagar_pressed"]

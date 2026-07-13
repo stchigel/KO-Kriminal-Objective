@@ -33,6 +33,7 @@ corner_radius_bottom_left = 3
 corner_detail = 5
 
 [node name="Mail" type="Panel" unique_id=1796508400]
+z_index = 2
 offset_right = 704.0
 offset_bottom = 448.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_ahdgd")
@@ -90,7 +91,7 @@ layout_mode = 2
 
 [node name="Inbox" type="Button" parent="." unique_id=1126517586]
 layout_mode = 0
-offset_left = 8.0
+offset_left = 1.0
 offset_top = 40.0
 offset_right = 184.0
 offset_bottom = 72.0
@@ -109,10 +110,10 @@ expand_mode = 1
 
 [node name="Enviados" type="Button" parent="." unique_id=383281318]
 layout_mode = 0
-offset_left = 9.0
-offset_top = 73.0
-offset_right = 185.0
-offset_bottom = 105.0
+offset_left = 1.0
+offset_top = 72.0
+offset_right = 184.0
+offset_bottom = 104.0
 theme_override_font_sizes/font_size = 13
 text = "         Enviados"
 alignment = 0
@@ -128,10 +129,10 @@ expand_mode = 1
 
 [node name="Borradores" type="Button" parent="." unique_id=442736594]
 layout_mode = 0
-offset_left = 9.0
-offset_top = 106.0
+offset_left = 1.0
+offset_top = 104.0
 offset_right = 185.0
-offset_bottom = 138.0
+offset_bottom = 136.0
 theme_override_font_sizes/font_size = 13
 text = "         Borradores"
 alignment = 0

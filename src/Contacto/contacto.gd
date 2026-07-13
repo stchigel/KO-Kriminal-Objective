@@ -4,7 +4,7 @@ extends Button
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	if chat:
-		$Icon.texture = chat.avatar
+		$PanelContainer/Icon.texture = chat.avatar
 		$Nombre.text = chat.nombre
 		if chat.mensajes.size() > 0:
 			$Mensaje.text = chat.mensajes[chat.mensajes.size()-1].text
