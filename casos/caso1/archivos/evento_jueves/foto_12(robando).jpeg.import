@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c42dhcfopq2eu"
-path="res://.godot/imported/foto_12(robando).png-5877e9ca4d39fe1662bd6b643366b188.ctex"
+uid="uid://8l0embddgro"
+path="res://.godot/imported/foto_12(robando).jpeg-7f7caac86e042e3b034d65cd7909dff9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://casos/caso1/archivos/evento_jueves/foto_12(robando).png"
-dest_files=["res://.godot/imported/foto_12(robando).png-5877e9ca4d39fe1662bd6b643366b188.ctex"]
+source_file="res://casos/caso1/archivos/evento_jueves/foto_12(robando).jpeg"
+dest_files=["res://.godot/imported/foto_12(robando).jpeg-7f7caac86e042e3b034d65cd7909dff9.ctex"]
 
 [params]
 

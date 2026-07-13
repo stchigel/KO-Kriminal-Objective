@@ -38,6 +38,7 @@
 [ext_resource type="Resource" uid="uid://c6qcxgd3lqn66" path="res://casos/caso1/mails/mail_06_lucas_a_tomas.tres" id="25_avwex"]
 [ext_resource type="Texture2D" uid="uid://c46xmycnus7oy" path="res://assets/iconos/system-shutdown.svg" id="25_xj1bk"]
 [ext_resource type="PackedScene" uid="uid://dir6afeorbba6" path="res://src/Mail/contactoMail.tscn" id="26_h4xrn"]
+[ext_resource type="Texture2D" uid="uid://8l0embddgro" path="res://casos/caso1/archivos/evento_jueves/foto_12(robando).jpeg" id="31_upi6q"]
 [ext_resource type="Texture2D" uid="uid://1h724ledh0gt" path="res://casos/caso1/archivos/evento_jueves/foto_02.png" id="39_p6eux"]
 [ext_resource type="Texture2D" uid="uid://cmgbgp3jaxilv" path="res://casos/caso1/archivos/evento_jueves/foto_03.png" id="40_u4sal"]
 [ext_resource type="Texture2D" uid="uid://bmi6pia5la8kw" path="res://casos/caso1/archivos/evento_jueves/foto_04.png" id="41_1ewgb"]
@@ -48,7 +49,6 @@
 [ext_resource type="Texture2D" uid="uid://donehxqd8ihoe" path="res://casos/caso1/archivos/evento_jueves/foto_09.png" id="46_5f6yg"]
 [ext_resource type="Texture2D" uid="uid://bgxqutoj4irhc" path="res://casos/caso1/archivos/evento_jueves/foto_10.png" id="47_34t80"]
 [ext_resource type="Texture2D" uid="uid://ctpvhssbrr3nf" path="res://casos/caso1/archivos/evento_jueves/foto_11.png" id="48_g5rwo"]
-[ext_resource type="Texture2D" uid="uid://c42dhcfopq2eu" path="res://casos/caso1/archivos/evento_jueves/foto_12(robando).png" id="49_budul"]
 [ext_resource type="Texture2D" uid="uid://c48su0kj0huh4" path="res://casos/caso1/archivos/evento_jueves/foto_13(robando).jpeg" id="50_egbpa"]
 [ext_resource type="Texture2D" uid="uid://cuyfw2iuavf6j" path="res://casos/caso1/archivos/evento_jueves/foto_14(robando).jpeg" id="51_em1yl"]
 [ext_resource type="Texture2D" uid="uid://sdfekye6kul2" path="res://casos/caso1/archivos/evento_jueves/foto_15(robando).jpeg" id="52_g7jtt"]
@@ -412,7 +412,7 @@ offset_left = 344.0
 offset_top = 192.0
 offset_right = 1176.0
 offset_bottom = 640.0
-nombre = "Portfolio_2024"
+nombre = "EventoRossi"
 
 [node name="Archivo" parent="EventoRossi" unique_id=601852530 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
@@ -456,9 +456,9 @@ abrir = NodePath("../../ImagenEvento4")
 
 [node name="Archivo5" parent="EventoRossi" unique_id=287458738 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
-offset_left = 288.0
+offset_left = 376.0
 offset_top = 48.0
-offset_right = 368.0
+offset_right = 456.0
 offset_bottom = 128.0
 nom = "5.png"
 icono = ExtResource("42_femcr")
@@ -466,9 +466,9 @@ abrir = NodePath("../../ImagenEvento5")
 
 [node name="Archivo6" parent="EventoRossi" unique_id=711068561 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
-offset_left = 288.0
+offset_left = 464.0
 offset_top = 48.0
-offset_right = 368.0
+offset_right = 544.0
 offset_bottom = 128.0
 nom = "6.png"
 icono = ExtResource("43_y81d7")
@@ -476,9 +476,9 @@ abrir = NodePath("../../ImagenEvento6")
 
 [node name="Archivo7" parent="EventoRossi" unique_id=1881570 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
-offset_left = 288.0
+offset_left = 552.0
 offset_top = 48.0
-offset_right = 368.0
+offset_right = 632.0
 offset_bottom = 128.0
 nom = "7.png"
 icono = ExtResource("44_1wmi8")
@@ -486,9 +486,9 @@ abrir = NodePath("../../ImagenEvento7")
 
 [node name="Archivo8" parent="EventoRossi" unique_id=850228193 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
-offset_left = 288.0
+offset_left = 640.0
 offset_top = 48.0
-offset_right = 368.0
+offset_right = 720.0
 offset_bottom = 128.0
 nom = "8.png"
 icono = ExtResource("45_4mer2")
@@ -496,9 +496,9 @@ abrir = NodePath("../../ImagenEvento8")
 
 [node name="Archivo9" parent="EventoRossi" unique_id=1064971242 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
-offset_left = 288.0
+offset_left = 728.0
 offset_top = 48.0
-offset_right = 368.0
+offset_right = 808.0
 offset_bottom = 128.0
 nom = "9.png"
 icono = ExtResource("46_5f6yg")
@@ -506,60 +506,60 @@ abrir = NodePath("../../ImagenEvento9")
 
 [node name="Archivo10" parent="EventoRossi" unique_id=309645500 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
-offset_left = 288.0
-offset_top = 48.0
-offset_right = 368.0
-offset_bottom = 128.0
+offset_left = 24.0
+offset_top = 136.0
+offset_right = 104.0
+offset_bottom = 216.0
 nom = "10.png"
 icono = ExtResource("47_34t80")
 abrir = NodePath("../../ImagenEvento10")
 
 [node name="Archivo11" parent="EventoRossi" unique_id=1036789665 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
-offset_left = 288.0
-offset_top = 48.0
-offset_right = 368.0
-offset_bottom = 128.0
+offset_left = 106.0
+offset_top = 136.0
+offset_right = 186.0
+offset_bottom = 216.0
 nom = "11.png"
 icono = ExtResource("48_g5rwo")
 abrir = NodePath("../../ImagenEvento11")
 
 [node name="Archivo12" parent="EventoRossi" unique_id=1655991596 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
-offset_left = 288.0
-offset_top = 48.0
-offset_right = 368.0
-offset_bottom = 128.0
+offset_left = 188.0
+offset_top = 136.0
+offset_right = 268.0
+offset_bottom = 216.0
 nom = "12.png"
-icono = ExtResource("49_budul")
+icono = ExtResource("31_upi6q")
 abrir = NodePath("../../ImagenEvento12")
 
 [node name="Archivo13" parent="EventoRossi" unique_id=559034880 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
-offset_left = 288.0
-offset_top = 48.0
-offset_right = 368.0
-offset_bottom = 128.0
+offset_left = 270.0
+offset_top = 136.0
+offset_right = 350.0
+offset_bottom = 216.0
 nom = "13.png"
 icono = ExtResource("50_egbpa")
 abrir = NodePath("../../ImagenEvento13")
 
 [node name="Archivo14" parent="EventoRossi" unique_id=1004614250 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
-offset_left = 288.0
-offset_top = 48.0
-offset_right = 368.0
-offset_bottom = 128.0
+offset_left = 352.0
+offset_top = 136.0
+offset_right = 432.0
+offset_bottom = 216.0
 nom = "14.png"
 icono = ExtResource("51_em1yl")
 abrir = NodePath("../../ImagenEvento14")
 
 [node name="Archivo15" parent="EventoRossi" unique_id=1505100246 node_paths=PackedStringArray("abrir") instance=ExtResource("3_sqyg2")]
 layout_mode = 0
-offset_left = 288.0
-offset_top = 48.0
-offset_right = 368.0
-offset_bottom = 128.0
+offset_left = 434.0
+offset_top = 136.0
+offset_right = 514.0
+offset_bottom = 216.0
 nom = "15.png"
 icono = ExtResource("52_g7jtt")
 abrir = NodePath("../../ImagenEvento15")
@@ -801,7 +801,7 @@ offset_left = 440.0
 offset_top = 168.0
 offset_right = 888.0
 offset_bottom = 616.0
-imagen = ExtResource("49_budul")
+imagen = ExtResource("31_upi6q")
 nombre = "12.png"
 
 [node name="ImagenEvento13" parent="." unique_id=686587364 instance=ExtResource("19_g5c83")]
