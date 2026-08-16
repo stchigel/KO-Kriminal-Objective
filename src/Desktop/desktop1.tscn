@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://x75t1fd57l1c" path="res://assets/kali-linux-wallpaper-v7.png" id="2_oa6j7"]
 [ext_resource type="PackedScene" uid="uid://gvdkmy35w8vf" path="res://src/Icono/icono.tscn" id="3_0v8fh"]
 [ext_resource type="PackedScene" uid="uid://c6loc4d14ok78" path="res://src/Archivo/archivo.tscn" id="3_sqyg2"]
+[ext_resource type="Script" uid="uid://c8jgt0f11jxc6" path="res://src/GeneradorArchivos/generador_archivos.gd" id="3_u4sal"]
 [ext_resource type="Texture2D" uid="uid://j3eejcb1nswt" path="res://assets/iconos/user-trash-full.svg" id="4_2oi1j"]
 [ext_resource type="Texture2D" uid="uid://dd1fkqvw3jhuh" path="res://assets/iconos/whatsapp.png" id="5_h4xrn"]
 [ext_resource type="Texture2D" uid="uid://dfroqy6y156fx" path="res://assets/iconos/folder-blue-home.svg" id="5_qlthb"]
@@ -64,6 +65,10 @@ grow_vertical = 2
 script = ExtResource("1_0xtnm")
 ventanas = [NodePath("Papelera"), NodePath("BorradorMsj"), NodePath("Home"), NodePath("Fotos"), NodePath("Portfolio"), NodePath("Presupuestos"), NodePath("Eventos"), NodePath("Notas"), NodePath("Chat"), NodePath("Mail")]
 juicioScene = ExtResource("2_h4xrn")
+
+[node name="GeneradorArchivos" type="Node" parent="." unique_id=741621108]
+script = ExtResource("3_u4sal")
+carpetas = Array[NodePath]([NodePath("../Papelera"), NodePath("../Home"), NodePath("../Fotos"), NodePath("../Trabajo"), NodePath("../Personal"), NodePath("../Portfolio"), NodePath("../Presupuestos"), NodePath("../Eventos"), NodePath("../Notas"), NodePath("../EventoRossi")])
 
 [node name="Fondo" type="TextureRect" parent="." unique_id=619088530]
 show_behind_parent = true

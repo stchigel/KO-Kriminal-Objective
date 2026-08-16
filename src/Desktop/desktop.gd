@@ -42,8 +42,8 @@ func aplicar():
 	$Topbar/Panel.hide()
 	var rect = Rect2(start_pos, current_pos - start_pos).abs()
 	for item in get_children():
-		var item_rect = Rect2(item.position, item.size)
 		if item.is_in_group("archivo"):
+			var item_rect = Rect2(item.position, item.size)
 			if rect.intersects(item_rect):
 				item.select()
 			else:
