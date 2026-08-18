@@ -43,4 +43,6 @@ script = ExtResource("3_tl1c6")
 nombre = "Los del martes"
 avatar = SubResource("Resource_4qg8f")
 mensajes = Array[ExtResource("2_7j066")]([SubResource("Resource_ma001"), SubResource("Resource_ma002"), SubResource("Resource_ma003"), SubResource("Resource_ma004"), SubResource("Resource_ma005")])
+mensajes_enviables = ["Hola, soy investigadora del caso de Marcelo. ¿Alguien habló con él últimamente?", "¿Marcelo mencionó tener problemas con algún cliente o colega?", "¿Saben si conocía a alguien llamado Lorenzo Machi?"]
+respuestas = ["Horacio: No lo veíamos hace semanas. Decía que tenía mucho trabajo, pero parecía otra cosa.", "Roberto: Una vez dijo algo de 'un cliente que lo metía en un lío'. No quiso decir más. Pensamos que era drama de siempre.", "Horacio: No. Nunca nombró a nadie con ese nombre que yo recuerde."]
 metadata/_custom_type_script = "uid://by8r7fs8syfyj"

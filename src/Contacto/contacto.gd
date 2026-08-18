@@ -13,5 +13,5 @@ func _ready() -> void:
 
 
 func _on_pressed() -> void:
-	if chat and chat.mensajes.size() > 0:
-		get_parent().get_parent().get_parent().load_messages(chat.mensajes)
+	if chat:
+		get_parent().get_parent().get_parent().load_chat(chat)

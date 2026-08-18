@@ -50,4 +50,6 @@ script = ExtResource("3_tl1c6")
 nombre = "Lucía"
 avatar = SubResource("Resource_q2t0e")
 mensajes = Array[ExtResource("2_7j066")]([SubResource("Resource_lu001"), SubResource("Resource_lu002"), SubResource("Resource_lu003"), SubResource("Resource_lu004"), SubResource("Resource_lu005"), SubResource("Resource_lu006")])
+mensajes_enviables = ["Lucía, soy la agente a cargo del caso de su padre. ¿Puede responderme unas preguntas?", "¿Notó algo raro en él en las últimas semanas?", "¿Su padre le mencionó a alguien llamado Lorenzo Machi?"]
+respuestas = ["Sí, claro. Lo que sea para ayudar.", "Andaba muy estresado. Me decía que tenía 'un tema de trabajo serio', pero no quiso darme detalles. Lo noté asustado la última vez que hablamos.", "No, ese nombre no me suena. Papá no hablaba mucho de sus clientes."]
 metadata/_custom_type_script = "uid://by8r7fs8syfyj"

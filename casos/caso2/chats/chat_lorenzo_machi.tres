@@ -75,4 +75,6 @@ script = ExtResource("3_tl1c6")
 nombre = "Lorenzo Machi"
 avatar = SubResource("Resource_nwg20")
 mensajes = Array[ExtResource("2_7j066")]([SubResource("Resource_lm001"), SubResource("Resource_lm002"), SubResource("Resource_lm003"), SubResource("Resource_lm004"), SubResource("Resource_lm005"), SubResource("Resource_lm006"), SubResource("Resource_lm007"), SubResource("Resource_lm008"), SubResource("Resource_lm009"), SubResource("Resource_lm010")])
+mensajes_enviables = ["Machi, soy la agente a cargo de la muerte de Marcelo Vidal. Necesito su declaración.", "¿Cuándo fue el último contacto que tuvo con Vidal?", "¿Qué significa 'no voy a poder controlar lo que pase' en sus mensajes?", "¿Dónde estaba la noche del martes 12 de noviembre?"]
+respuestas = ["No tengo nada que decirle. Hable con mi abogado.", "No recuerdo exactamente. Tuvimos intercambios profesionales, como con cualquier tasador.", "Fue una expresión de frustración. No tiene ninguna connotación que usted pueda usar.", "En casa. Cené temprano y me fui a dormir. No tengo que justificar nada más."]
 metadata/_custom_type_script = "uid://by8r7fs8syfyj"
